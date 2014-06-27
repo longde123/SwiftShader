@@ -12,7 +12,7 @@
 #ifndef sw_RoutineManager_hpp
 #define sw_RoutineManager_hpp
 
-#include "llvm/GlobalValue.h"
+#include "llvm/IR/GlobalValue.h"
 #include "llvm/ExecutionEngine/JITMemoryManager.h"
 
 namespace sw
@@ -26,21 +26,25 @@ namespace sw
 
 		virtual ~RoutineManager();
 
-		virtual void AllocateGOT();
+		virtual uint8_t *allocateCodeSection(uintptr_t Size, unsigned Alignment, unsigned SectionID, llvm::StringRef SectionName);
+		virtual uint8_t *allocateDataSection(uintptr_t Size, unsigned Alignment, unsigned SectionID, llvm::StringRef SectionName, bool IsReadOnly);
+		virtual bool finalizeMemory(std::string *ErrMsg = 0);
 
-		virtual uint8_t *allocateStub(const llvm::GlobalValue *function, unsigned stubSize, unsigned alignment);
-		virtual uint8_t *startFunctionBody(const llvm::Function *function, uintptr_t &actualSize);
-		virtual void endFunctionBody(const llvm::Function *function, uint8_t *functionStart, uint8_t *functionEnd);
-		virtual uint8_t *startExceptionTable(const llvm::Function *function, uintptr_t &ActualSize);
-		virtual void endExceptionTable(const llvm::Function *function, uint8_t *tableStart, uint8_t *tableEnd, uint8_t *frameRegister);
-		virtual uint8_t *getGOTBase() const;
-		virtual uint8_t *allocateSpace(intptr_t Size, unsigned Alignment);
-		virtual uint8_t *allocateGlobal(uintptr_t Size, unsigned int Alignment);
-		virtual void deallocateFunctionBody(void *Body);
-		virtual void deallocateExceptionTable(void *ET);
 		virtual void setMemoryWritable();
 		virtual void setMemoryExecutable();
 		virtual void setPoisonMemory(bool poison);
+
+		virtual void AllocateGOT();
+		virtual uint8_t *getGOTBase() const;
+
+		virtual void *getPointerToNamedFunction(const std::string &Name, bool AbortOnFailure = true);
+
+		virtual uint8_t *startFunctionBody(const llvm::Function *function, uintptr_t &actualSize);
+		virtual uint8_t *allocateStub(const llvm::GlobalValue *function, unsigned stubSize, unsigned alignment);
+		virtual void endFunctionBody(const llvm::Function *function, uint8_t *functionStart, uint8_t *functionEnd);
+		virtual uint8_t *allocateSpace(intptr_t Size, unsigned Alignment);
+		virtual uint8_t *allocateGlobal(uintptr_t Size, unsigned int Alignment);
+		virtual void deallocateFunctionBody(void *Body);
 
 		Routine *acquireRoutine(void *entry);
 

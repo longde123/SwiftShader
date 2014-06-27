@@ -12,10 +12,16 @@
 #include "RoutineManager.hpp"
 
 #include "Routine.hpp"
-#include "llvm/Function.h"
+#include "llvm/IR/Function.h"
 #include "../Common/Memory.hpp"
 #include "../Common/Thread.hpp"
 #include "../Common/Debug.hpp"
+
+#if __x86_64__
+	extern "C" void __chkstk();
+#else
+	extern "C" void _chkstk();
+#endif
 
 namespace sw
 {
@@ -33,13 +39,57 @@ namespace sw
 		delete routine;
 	}
 
+	uint8_t *RoutineManager::allocateCodeSection(uintptr_t Size, unsigned Alignment, unsigned SectionID, StringRef SectionName)
+	{
+		UNIMPLEMENTED();
+		return 0;
+	}
+	
+	uint8_t *RoutineManager::allocateDataSection(uintptr_t Size, unsigned Alignment, unsigned SectionID, StringRef SectionName, bool IsReadOnly)
+	{
+		UNIMPLEMENTED();
+		return 0;
+	}
+
+	bool RoutineManager::finalizeMemory(std::string *ErrMsg)
+	{
+		UNIMPLEMENTED();
+		return false;
+	}
+
+	void RoutineManager::setMemoryWritable()
+	{
+	}
+
+	void RoutineManager::setMemoryExecutable()
+	{
+		markExecutable(routine->buffer, routine->bufferSize);
+	}
+
+	void RoutineManager::setPoisonMemory(bool poison)
+	{
+		UNIMPLEMENTED();
+	}
+
 	void RoutineManager::AllocateGOT()
 	{
 		UNIMPLEMENTED();
 	}
 
-	uint8_t *RoutineManager::allocateStub(const GlobalValue *function, unsigned stubSize, unsigned alignment)
+	uint8_t *RoutineManager::getGOTBase() const
 	{
+		ASSERT(!HasGOT);
+		return 0;
+	}
+
+	void *RoutineManager::getPointerToNamedFunction(const std::string &Name, bool AbortOnFailure)
+	{
+		#if __x86_64__
+			if(Name == "__chkstk") return __chkstk;
+		#else
+			if(Name == "_chkstk") return _chkstk;
+		#endif
+
 		UNIMPLEMENTED();
 		return 0;
 	}
@@ -71,26 +121,15 @@ namespace sw
 		return (uint8_t*)routine->getBuffer();
 	}
 
+	uint8_t *RoutineManager::allocateStub(const GlobalValue *function, unsigned stubSize, unsigned alignment)
+	{
+		UNIMPLEMENTED();
+		return 0;
+	}
+
 	void RoutineManager::endFunctionBody(const llvm::Function *function, uint8_t *functionStart, uint8_t *functionEnd)
 	{
 		routine->setFunctionSize(functionEnd - functionStart);
-	}
-
-	uint8_t *RoutineManager::startExceptionTable(const llvm::Function* F, uintptr_t &ActualSize)
-	{
-		UNIMPLEMENTED();
-		return 0;
-	}
-
-	void RoutineManager::endExceptionTable(const llvm::Function *F, uint8_t *TableStart, uint8_t *TableEnd, uint8_t* FrameRegister) 
-	{
-		UNIMPLEMENTED();
-	}
-    
-	uint8_t *RoutineManager::getGOTBase() const
-	{
-		ASSERT(!HasGOT);
-		return 0;
 	}
 
 	uint8_t *RoutineManager::allocateSpace(intptr_t Size, unsigned Alignment)
@@ -109,25 +148,6 @@ namespace sw
 	{
 		delete routine;
 		routine = 0;
-	}
-
-	void RoutineManager::deallocateExceptionTable(void *ET)
-	{
-		UNIMPLEMENTED();
-	}
-
-	void RoutineManager::setMemoryWritable()
-	{
-	}
-
-	void RoutineManager::setMemoryExecutable()
-	{
-		markExecutable(routine->buffer, routine->bufferSize);
-	}
-
-	void RoutineManager::setPoisonMemory(bool poison)
-	{
-		UNIMPLEMENTED();
 	}
 
 	Routine *RoutineManager::acquireRoutine(void *entry)

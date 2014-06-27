@@ -11,18 +11,11 @@
 
 #include "Nucleus.hpp"
 
-#include "llvm/Support/IRBuilder.h"
-#include "llvm/Function.h"
-#include "llvm/GlobalVariable.h"
-#include "llvm/Module.h"
-#include "llvm/LLVMContext.h"
-#include "llvm/Constants.h"
-#include "llvm/Intrinsics.h"
-#include "llvm/PassManager.h"
-#include "llvm/Analysis/LoopPass.h"
+#include "llvm/IR/IRBuilder.h"
+#include "llvm/IR/Module.h"
+#include "llvm/IR/Intrinsics.h"
 #include "llvm/Transforms/Scalar.h"
-#include "llvm/Target/TargetData.h"
-#include "llvm/Target/TargetOptions.h"
+#include "llvm/Support/CFG.h"
 #include "llvm/Support/TargetSelect.h"
 #include "../lib/ExecutionEngine/JIT/JIT.h"
 
@@ -49,11 +42,6 @@ extern "C"
 	bool (*CodeAnalystLogJITCode)(const void *jitCodeStartAddr, unsigned int jitCodeSize, const wchar_t *functionName) = 0;
 }
 
-namespace llvm
-{
-	extern bool JITEmitDebugInfo;
-}
-
 namespace sw
 {
 	Optimization optimization[10] = {InstructionCombining, Disabled};
@@ -74,7 +62,6 @@ namespace sw
 	Nucleus::Nucleus()
 	{
 		InitializeNativeTarget();
-		JITEmitDebugInfo = false;
 
 		if(!context)
 		{
@@ -99,9 +86,23 @@ namespace sw
 		MAttrs.push_back(CPUID::supportsSSSE3()  ? "+ssse3" : "-ssse3");
 		MAttrs.push_back(CPUID::supportsSSE4_1() ? "+sse41" : "-sse41");
 
-		std::string error;
-		TargetMachine *targetMachine = EngineBuilder::selectTarget(module, architecture, "", MAttrs, Reloc::Default, CodeModel::JITDefault, &error);
-		executionEngine = JIT::createJIT(module, 0, routineManager, CodeGenOpt::Aggressive, true, targetMachine);
+		TargetOptions targetOptions;
+		targetOptions.JITEmitDebugInfo = false;
+		targetOptions.NoFramePointerElim = true;
+		targetOptions.UnsafeFPMath = true;
+	//	targetOptions.NoInfsFPMath = true;
+	//	targetOptions.NoNaNsFPMath = true;
+
+		EngineBuilder engineBuilder(module);
+		engineBuilder.setEngineKind(EngineKind::JIT);
+		engineBuilder.setJITMemoryManager(routineManager);
+		engineBuilder.setOptLevel(CodeGenOpt::Default);
+		engineBuilder.setTargetOptions(targetOptions);
+		engineBuilder.setAllocateGVsWithCode(true);
+		engineBuilder.setUseMCJIT(false);
+		engineBuilder.setMAttrs(MAttrs);
+
+		executionEngine = engineBuilder.create();
 
 		if(!builder)
 		{
@@ -184,12 +185,7 @@ namespace sw
 		if(!passManager)
 		{
 			passManager = new PassManager();
-
-			UnsafeFPMath = true;
-		//	NoInfsFPMath = true;
-		//	NoNaNsFPMath = true;
-
-			passManager->add(new TargetData(*executionEngine->getTargetData()));
+			passManager->add(new DataLayout(*executionEngine->getDataLayout()));
 			passManager->add(createScalarReplAggregatesPass());
 
 			for(int pass = 0; pass < 10 && optimization[pass] != Disabled; pass++)
