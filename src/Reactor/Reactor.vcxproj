@@ -273,6 +273,14 @@
     <ClInclude Include="RoutineManager.hpp" />
     <ClInclude Include="x86.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\build\VisualStudio2013\lib\ExecutionEngine\JIT\LLVMJIT.vcxproj">
+      <Project>{0aabef71-d5a2-42d4-9d7d-83f957a7583f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\build\VisualStudio2013\lib\Target\X86\LLVMX86CodeGen.vcxproj">
+      <Project>{aedfc204-71d6-4aa9-9ab8-acad64c55372}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
