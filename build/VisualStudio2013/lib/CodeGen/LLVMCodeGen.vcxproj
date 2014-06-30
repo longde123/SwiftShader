@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="us-ascii"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -53,27 +53,28 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCodeGen.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCodeGen.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCodeGen.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCodeGen.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCodeGen.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCodeGen.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCodeGen.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCodeGen.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
@@ -126,7 +127,8 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -160,7 +162,8 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -212,62 +215,6 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/CodeGen/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.h" />
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AllocationOrder.h" />
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AntiDepBreaker.h" />
@@ -283,116 +230,116 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Spiller.h" />
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SpillPlacement.h" />
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SplitKit.h" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AllocationOrder.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Analysis.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BasicTargetTransformInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BranchFolding.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CalcSpillWeights.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CallingConvLower.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CodeGen.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CriticalAntiDepBreaker.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DFAPacketizer.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DeadMachineInstructionElim.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DwarfEHPrepare.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\EarlyIfConversion.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\EdgeBundles.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ErlangGC.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExecutionDepsFix.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExpandISelPseudos.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExpandPostRAPseudos.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCMetadata.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCMetadataPrinter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCStrategy.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\IfConversion.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InlineSpiller.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InterferenceCache.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\IntrinsicLowering.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\JITCodeEmitter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LLVMTargetMachine.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LatencyPriorityQueue.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LexicalScopes.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveDebugVariables.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveInterval.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveIntervalAnalysis.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveIntervalUnion.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeCalc.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeEdit.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRegMatrix.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRegUnits.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveStackAnalysis.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveVariables.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LocalStackSlotAllocation.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBasicBlock.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBlockFrequencyInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBlockPlacement.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBranchProbabilityInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCSE.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCodeEmitter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCopyPropagation.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineDominators.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunction.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionAnalysis.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionPass.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionPrinterPass.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineInstr.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineInstrBundle.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineLICM.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineLoopInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineModuleInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineModuleInfoImpls.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachinePassRegistry.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachinePostDominators.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineRegisterInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineSSAUpdater.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineScheduler.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineSink.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineTraceMetrics.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineVerifier.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\OcamlGC.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\OptimizePHIs.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIElimination.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIEliminationUtils.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Passes.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PeepholeOptimizer.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PostRASchedulerList.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ProcessImplicitDefs.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PrologEpilogInserter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PseudoSourceValue.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBase.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBasic.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocFast.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocGreedy.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocPBQP.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterClassInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterCoalescer.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterPressure.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterScavenging.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAG.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAGInstrs.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAGPrinter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScoreboardHazardRecognizer.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ShadowStackGC.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SjLjEHPrepare.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SlotIndexes.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SpillPlacement.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Spiller.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SplitKit.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackColoring.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackProtector.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackSlotColoring.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackMaps.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TailDuplication.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetFrameLoweringImpl.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetInstrInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetLoweringBase.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetLoweringObjectFileImpl.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetOptionsImpl.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetRegisterInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetSchedule.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TwoAddressInstructionPass.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\UnreachableBlockElim.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\VirtRegMap.cpp"  />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AllocationOrder.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Analysis.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BasicTargetTransformInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BranchFolding.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CalcSpillWeights.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CallingConvLower.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CodeGen.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CriticalAntiDepBreaker.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DFAPacketizer.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DeadMachineInstructionElim.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DwarfEHPrepare.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\EarlyIfConversion.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\EdgeBundles.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ErlangGC.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExecutionDepsFix.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExpandISelPseudos.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExpandPostRAPseudos.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCMetadata.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCMetadataPrinter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCStrategy.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\IfConversion.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InlineSpiller.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InterferenceCache.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\IntrinsicLowering.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\JITCodeEmitter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LLVMTargetMachine.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LatencyPriorityQueue.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LexicalScopes.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveDebugVariables.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveInterval.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveIntervalAnalysis.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveIntervalUnion.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeCalc.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeEdit.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRegMatrix.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRegUnits.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveStackAnalysis.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveVariables.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LocalStackSlotAllocation.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBasicBlock.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBlockFrequencyInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBlockPlacement.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBranchProbabilityInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCSE.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCodeEmitter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCopyPropagation.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineDominators.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunction.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionAnalysis.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionPass.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionPrinterPass.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineInstr.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineInstrBundle.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineLICM.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineLoopInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineModuleInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineModuleInfoImpls.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachinePassRegistry.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachinePostDominators.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineRegisterInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineSSAUpdater.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineScheduler.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineSink.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineTraceMetrics.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineVerifier.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\OcamlGC.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\OptimizePHIs.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIElimination.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIEliminationUtils.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Passes.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PeepholeOptimizer.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PostRASchedulerList.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ProcessImplicitDefs.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PrologEpilogInserter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PseudoSourceValue.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBase.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBasic.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocFast.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocGreedy.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocPBQP.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterClassInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterCoalescer.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterPressure.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterScavenging.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAG.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAGInstrs.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAGPrinter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScoreboardHazardRecognizer.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ShadowStackGC.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SjLjEHPrepare.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SlotIndexes.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SpillPlacement.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Spiller.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SplitKit.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackColoring.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackProtector.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackSlotColoring.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackMaps.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TailDuplication.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetFrameLoweringImpl.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetInstrInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetLoweringBase.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetLoweringObjectFileImpl.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetOptionsImpl.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetRegisterInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetSchedule.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TwoAddressInstructionPass.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\UnreachableBlockElim.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\VirtRegMap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Analysis/LLVMAnalysis.vcxproj">
@@ -427,9 +374,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Analysis/IPA/LLVMipa.vcxproj">
       <Project>4DD30436-47B8-4297-9B82-1D82C55E5B70</Project>
-    </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/ZERO_CHECK.vcxproj">
-      <Project>4CEE29F1-9736-45FA-A4B3-EA8F5C7BEE6C</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/include/llvm/IR/intrinsics_gen.vcxproj">
       <Project>B2365083-A96B-48BE-A03C-DB90FAC92B25</Project>

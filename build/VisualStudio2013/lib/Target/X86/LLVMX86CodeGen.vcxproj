@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="us-ascii"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -53,27 +53,28 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMX86CodeGen.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMX86CodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMX86CodeGen.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMX86CodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMX86CodeGen.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMX86CodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMX86CodeGen.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMX86CodeGen</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMX86CodeGen.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMX86CodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMX86CodeGen.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMX86CodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMX86CodeGen.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMX86CodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMX86CodeGen.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMX86CodeGen</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
@@ -126,7 +127,8 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -160,7 +162,8 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -211,62 +214,6 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <CustomBuild Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Target/X86/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenRegisterInfo.inc.tmp.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building X86GenRegisterInfo.inc...</Message>
@@ -325,7 +272,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenRegisterInfo.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -338,7 +286,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenRegisterInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenRegisterInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenRegisterInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -351,7 +300,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenRegisterInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenRegisterInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenRegisterInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -364,7 +314,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenRegisterInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenRegisterInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenRegisterInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenRegisterInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -437,7 +388,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenDisassemblerTables.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -450,7 +402,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenDisassemblerTables.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDisassemblerTables.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDisassemblerTables.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -463,7 +416,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenDisassemblerTables.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDisassemblerTables.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDisassemblerTables.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -476,7 +430,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenDisassemblerTables.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDisassemblerTables.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDisassemblerTables.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDisassemblerTables.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -549,7 +504,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenInstrInfo.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -562,7 +518,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenInstrInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenInstrInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenInstrInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -575,7 +532,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenInstrInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenInstrInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenInstrInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -588,7 +546,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenInstrInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenInstrInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenInstrInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenInstrInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -661,7 +620,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenAsmWriter.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -674,7 +634,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmWriter.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -687,7 +648,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmWriter.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -700,7 +662,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmWriter.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -773,7 +736,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenAsmWriter1.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -786,7 +750,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmWriter1.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter1.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter1.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -799,7 +764,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmWriter1.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter1.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter1.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -812,7 +778,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmWriter1.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter1.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmWriter1.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmWriter1.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -885,7 +852,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenAsmMatcher.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -898,7 +866,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmMatcher.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmMatcher.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmMatcher.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -911,7 +880,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmMatcher.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmMatcher.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmMatcher.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -924,7 +894,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenAsmMatcher.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmMatcher.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenAsmMatcher.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenAsmMatcher.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -997,7 +968,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenDAGISel.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1010,7 +982,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenDAGISel.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDAGISel.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDAGISel.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1023,7 +996,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenDAGISel.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDAGISel.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDAGISel.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1036,7 +1010,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenDAGISel.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDAGISel.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenDAGISel.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenDAGISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1109,7 +1084,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenFastISel.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1122,7 +1098,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenFastISel.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenFastISel.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenFastISel.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1135,7 +1112,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenFastISel.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenFastISel.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenFastISel.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1148,7 +1126,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenFastISel.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenFastISel.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenFastISel.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenFastISel.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1221,7 +1200,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenCallingConv.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1234,7 +1214,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenCallingConv.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenCallingConv.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenCallingConv.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1247,7 +1228,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenCallingConv.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenCallingConv.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenCallingConv.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1260,7 +1242,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenCallingConv.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenCallingConv.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenCallingConv.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenCallingConv.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1333,7 +1316,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="..\..\..\CMakeFiles\c50444f06e953bd8cd686cbc20a00388\X86GenSubtargetInfo.inc.rule">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1346,7 +1330,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenSubtargetInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenSubtargetInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenSubtargetInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1359,7 +1344,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenSubtargetInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenSubtargetInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenSubtargetInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1372,7 +1358,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/CMakeFiles/c50444f06e953bd8cd686cbc20a00388/X86GenSubtargetInfo.inc.rule;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenSubtargetInfo.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Target\X86\X86GenSubtargetInfo.inc</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+      </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
 "C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc.tmp C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86GenSubtargetInfo.inc
 if %errorlevel% neq 0 goto :cmEnd
@@ -1432,27 +1419,27 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86Subtarget.h" />
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetMachine.h" />
     <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetObjectFile.h" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86AsmPrinter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86COFFMachineModuleInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86CodeEmitter.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FastISel.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FloatingPoint.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FrameLowering.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86ISelDAGToDAG.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86ISelLowering.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86InstrInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86JITInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86MCInstLower.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86MachineFunctionInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86PadShortFunction.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86RegisterInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86SelectionDAGInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86Subtarget.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetMachine.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetObjectFile.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetTransformInfo.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86VZeroUpper.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FixupLEAs.cpp"  />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86AsmPrinter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86COFFMachineModuleInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86CodeEmitter.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FastISel.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FloatingPoint.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FrameLowering.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86ISelDAGToDAG.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86ISelLowering.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86InstrInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86JITInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86MCInstLower.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86MachineFunctionInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86PadShortFunction.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86RegisterInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86SelectionDAGInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86Subtarget.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetMachine.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetObjectFile.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86TargetTransformInfo.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86VZeroUpper.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\X86FixupLEAs.cpp" />
     <None Include="X86GenRegisterInfo.inc" />
     <None Include="X86GenDisassemblerTables.inc" />
     <None Include="X86GenInstrInfo.inc" />
@@ -1524,9 +1511,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/X86/X86CommonTableGen.vcxproj">
       <Project>609CD238-855C-4710-99CF-8B64B663FCF6</Project>
-    </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/ZERO_CHECK.vcxproj">
-      <Project>4CEE29F1-9736-45FA-A4B3-EA8F5C7BEE6C</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/include/llvm/IR/intrinsics_gen.vcxproj">
       <Project>B2365083-A96B-48BE-A03C-DB90FAC92B25</Project>

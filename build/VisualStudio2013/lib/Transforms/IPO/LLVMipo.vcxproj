@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="Windows-1252"?>
+<?xml version="1.0" encoding="us-ascii"?>
 <Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -53,27 +53,28 @@
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-    <PropertyGroup>
-      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMipo.dir\Debug\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMipo</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMipo.dir\Release\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMipo</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMipo.dir\MinSizeRel\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMipo</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
-      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMipo.dir\RelWithDebInfo\</IntDir>
-      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMipo</TargetName>
-      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
-    </PropertyGroup>
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMipo.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMipo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMipo.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMipo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMipo.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMipo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMipo.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMipo</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
@@ -126,7 +127,8 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -160,7 +162,8 @@
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat></DebugInformationFormat>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
     </ClCompile>
@@ -212,83 +215,27 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
-"C:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Users/nicolascapens/Development/SwiftShader/src/LLVM -BC:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013 --check-stamp-file C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp
-if %errorlevel% neq 0 goto :cmEnd
-:cmEnd
-endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
-:cmErrorLevel
-exit /b %1
-:cmDone
-if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/nicolascapens/Development/SwiftShader/src/LLVM/lib/Transforms/IPO/CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Transforms\IPO\CMakeFiles\generate.stamp</Outputs>
-      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
-    </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\ArgumentPromotion.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\BarrierNoopPass.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\ConstantMerge.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\DeadArgumentElimination.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\ExtractGV.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\FunctionAttrs.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\GlobalDCE.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\GlobalOpt.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\IPConstantPropagation.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\IPO.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\InlineAlways.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\InlineSimple.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\Inliner.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\Internalize.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\LoopExtractor.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\MergeFunctions.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\PartialInlining.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\PassManagerBuilder.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\PruneEH.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\StripDeadPrototypes.cpp"  />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\StripSymbols.cpp"  />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\ArgumentPromotion.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\BarrierNoopPass.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\ConstantMerge.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\DeadArgumentElimination.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\ExtractGV.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\FunctionAttrs.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\GlobalDCE.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\GlobalOpt.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\IPConstantPropagation.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\IPO.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\InlineAlways.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\InlineSimple.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\Inliner.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\Internalize.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\LoopExtractor.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\MergeFunctions.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\PartialInlining.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\PassManagerBuilder.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\PruneEH.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\StripDeadPrototypes.cpp" />
+    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\IPO\StripSymbols.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Analysis/LLVMAnalysis.vcxproj">
@@ -326,9 +273,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Analysis/IPA/LLVMipa.vcxproj">
       <Project>4DD30436-47B8-4297-9B82-1D82C55E5B70</Project>
-    </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/ZERO_CHECK.vcxproj">
-      <Project>4CEE29F1-9736-45FA-A4B3-EA8F5C7BEE6C</Project>
     </ProjectReference>
     <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/include/llvm/IR/intrinsics_gen.vcxproj">
       <Project>B2365083-A96B-48BE-A03C-DB90FAC92B25</Project>
