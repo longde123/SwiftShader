@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\Utils\X86ShuffleDecode.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Target\X86\Utils\X86ShuffleDecode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Target\X86\Utils\X86ShuffleDecode.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Target\X86\Utils\X86ShuffleDecode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

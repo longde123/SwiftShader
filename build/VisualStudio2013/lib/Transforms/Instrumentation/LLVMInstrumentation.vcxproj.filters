@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\AddressSanitizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\AddressSanitizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\BoundsChecking.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\BoundsChecking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\DataFlowSanitizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\DataFlowSanitizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\DebugIR.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\DebugIR.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\GCOVProfiling.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\GCOVProfiling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\MemorySanitizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\MemorySanitizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\Instrumentation.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\Instrumentation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\ThreadSanitizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\ThreadSanitizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\DebugIR.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\DebugIR.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Instrumentation\MaximumSpanningTree.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\Instrumentation\MaximumSpanningTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

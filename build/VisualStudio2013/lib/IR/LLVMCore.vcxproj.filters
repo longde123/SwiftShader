@@ -1,144 +1,144 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\AsmWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\AsmWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Attributes.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Attributes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\AutoUpgrade.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\AutoUpgrade.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\BasicBlock.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\BasicBlock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\ConstantFold.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\ConstantFold.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Constants.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Constants.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Core.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\DIBuilder.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\DIBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\DataLayout.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\DataLayout.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\DebugInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\DebugInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\DebugLoc.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\DebugLoc.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Dominators.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Dominators.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Function.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Function.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\GCOV.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\GCOV.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\GVMaterializer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\GVMaterializer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Globals.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Globals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\IRBuilder.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\IRBuilder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\InlineAsm.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\InlineAsm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Instruction.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Instruction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Instructions.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Instructions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\IntrinsicInst.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\IntrinsicInst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\LLVMContext.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\LLVMContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\LLVMContextImpl.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\LLVMContextImpl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\LeakDetector.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\LeakDetector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\LegacyPassManager.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\LegacyPassManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Metadata.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Metadata.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Module.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Module.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Pass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Pass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\PassManager.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\PassManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\PassRegistry.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\PassRegistry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\PrintModulePass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\PrintModulePass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Type.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Type.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\TypeFinder.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\TypeFinder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Use.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Use.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\User.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\User.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Value.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Value.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\ValueSymbolTable.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\ValueSymbolTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\ValueTypes.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\ValueTypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\Verifier.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\IR\Verifier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\AsmWriter.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\AsmWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\AttributeImpl.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\AttributeImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\ConstantFold.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\ConstantFold.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\ConstantsContext.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\ConstantsContext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\LeaksContext.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\LeaksContext.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\LLVMContextImpl.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\LLVMContextImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\IR\SymbolTableListTraitsImpl.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\IR\SymbolTableListTraitsImpl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

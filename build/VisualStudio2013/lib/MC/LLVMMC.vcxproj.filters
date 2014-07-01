@@ -1,157 +1,157 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\ELFObjectWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\ELFObjectWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAsmBackend.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAsmBackend.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAsmInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAsmInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAsmInfoCOFF.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAsmInfoCOFF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAsmInfoDarwin.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAsmInfoDarwin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAsmInfoELF.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAsmInfoELF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAsmStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAsmStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAssembler.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAssembler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCAtom.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCAtom.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCCodeEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCCodeEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCCodeGenInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCCodeGenInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCContext.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCDisassembler.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCDisassembler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCDwarf.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCDwarf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCELF.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCELF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCELFObjectTargetWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCELFObjectTargetWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCELFStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCELFStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCFunction.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCExpr.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCExpr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCExternalSymbolizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCExternalSymbolizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCInst.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCInst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCInstPrinter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCInstPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCInstrAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCInstrAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCLabel.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCLabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCMachOStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCMachOStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCMachObjectTargetWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCMachObjectTargetWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCModule.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCModuleYAML.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCModuleYAML.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCNullStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCNullStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCObjectFileInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCObjectFileInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCObjectDisassembler.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCObjectDisassembler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCObjectStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCObjectStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCObjectSymbolizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCObjectSymbolizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCObjectWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCObjectWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCPureStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCPureStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCRegisterInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCRegisterInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCRelocationInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCRelocationInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSection.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSection.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSectionCOFF.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSectionCOFF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSectionELF.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSectionELF.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSectionMachO.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSectionMachO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSubtargetInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSubtargetInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSymbol.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSymbol.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCSymbolizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCSymbolizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCValue.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCValue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MCWin64EH.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MCWin64EH.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\MachObjectWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\MachObjectWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\SubtargetFeature.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\SubtargetFeature.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\WinCOFFObjectWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\WinCOFFObjectWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\MC\WinCOFFStreamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\MC\WinCOFFStreamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,308 +1,308 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\APFloat.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\APFloat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\APInt.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\APInt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\APSInt.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\APSInt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Allocator.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Allocator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\BlockFrequency.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\BlockFrequency.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\BranchProbability.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\BranchProbability.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\circular_raw_ostream.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\circular_raw_ostream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\CommandLine.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\CommandLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Compression.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Compression.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ConstantRange.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ConstantRange.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ConvertUTF.c">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ConvertUTF.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ConvertUTFWrapper.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ConvertUTFWrapper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\CrashRecoveryContext.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\CrashRecoveryContext.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\DataExtractor.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\DataExtractor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\DataStream.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\DataStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Debug.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Debug.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\DeltaAlgorithm.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\DeltaAlgorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\DAGDeltaAlgorithm.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\DAGDeltaAlgorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Dwarf.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Dwarf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ErrorHandling.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ErrorHandling.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\FileUtilities.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\FileUtilities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\FileOutputBuffer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\FileOutputBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\FoldingSet.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\FoldingSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\FormattedStream.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\FormattedStream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\GraphWriter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\GraphWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Hashing.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Hashing.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\IntEqClasses.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\IntEqClasses.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\IntervalMap.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\IntervalMap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\IntrusiveRefCntPtr.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\IntrusiveRefCntPtr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\IsInf.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\IsInf.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\IsNAN.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\IsNAN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Locale.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Locale.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\LockFileManager.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\LockFileManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ManagedStatic.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ManagedStatic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\MemoryBuffer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\MemoryBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\MemoryObject.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\MemoryObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\MD5.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\MD5.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\PluginLoader.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\PluginLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\PrettyStackTrace.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\PrettyStackTrace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Regex.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Regex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\SmallPtrSet.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\SmallPtrSet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\SmallVector.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\SmallVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\SourceMgr.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\SourceMgr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Statistic.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Statistic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\StreamableMemoryObject.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\StreamableMemoryObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\StringExtras.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\StringExtras.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\StringMap.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\StringMap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\StringPool.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\StringPool.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\StringRef.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\StringRef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\StringRefMemoryObject.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\StringRefMemoryObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\SystemUtils.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\SystemUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Timer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Timer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ToolOutputFile.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ToolOutputFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Triple.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Triple.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Twine.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Twine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unicode.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Unicode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\YAMLParser.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\YAMLParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\YAMLTraits.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\YAMLTraits.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\raw_os_ostream.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\raw_os_ostream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\raw_ostream.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\raw_ostream.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regcomp.c">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\regcomp.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regerror.c">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\regerror.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regexec.c">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\regexec.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regfree.c">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\regfree.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regstrlcpy.c">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\regstrlcpy.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Atomic.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Atomic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Disassembler.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Disassembler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\DynamicLibrary.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\DynamicLibrary.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Errno.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Errno.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Host.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Host.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\IncludeFile.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\IncludeFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Memory.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Memory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Mutex.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Mutex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Path.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Path.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Process.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Process.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Program.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Program.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\RWMutex.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\RWMutex.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\SearchForAddressOfSpecialSymbol.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\SearchForAddressOfSpecialSymbol.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Signals.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Signals.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\system_error.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\system_error.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\TargetRegistry.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\TargetRegistry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\ThreadLocal.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\ThreadLocal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Threading.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Threading.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\TimeValue.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\TimeValue.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Valgrind.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Valgrind.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Watchdog.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Support\Watchdog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regcclass.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Support\regcclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regcname.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Support\regcname.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regex2.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Support\regex2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regex_impl.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Support\regex_impl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\regutils.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Support\regutils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Host.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Memory.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Mutex.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Path.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Process.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Program.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\RWMutex.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Signals.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\system_error.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\ThreadLocal.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\TimeValue.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Unix\Watchdog.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\DynamicLibrary.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Host.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Memory.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Mutex.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Path.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Process.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Program.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\RWMutex.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Signals.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\system_error.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\ThreadLocal.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\TimeValue.inc" />
-    <None Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Support\Windows\Watchdog.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Host.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Memory.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Mutex.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Path.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Process.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Program.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\RWMutex.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Signals.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\system_error.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\ThreadLocal.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\TimeValue.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Unix\Watchdog.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\DynamicLibrary.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Host.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Memory.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Mutex.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Path.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Process.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Program.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\RWMutex.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Signals.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\system_error.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\ThreadLocal.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\TimeValue.inc" />
+    <None Include="$(SolutionDir)\LLVM\lib\Support\Windows\Watchdog.inc" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Source Files">

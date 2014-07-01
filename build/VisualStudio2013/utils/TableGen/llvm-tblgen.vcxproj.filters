@@ -1,150 +1,150 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\AsmMatcherEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\AsmMatcherEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\AsmWriterEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\AsmWriterEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\AsmWriterInst.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\AsmWriterInst.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CallingConvEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CallingConvEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeEmitterGen.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeEmitterGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenDAGPatterns.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenDAGPatterns.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenInstruction.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenInstruction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenMapTable.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenMapTable.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenRegisters.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenRegisters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenSchedule.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenSchedule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenTarget.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenTarget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DAGISelEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DAGISelEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DAGISelMatcherEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DAGISelMatcherEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DAGISelMatcherGen.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DAGISelMatcherGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DAGISelMatcherOpt.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DAGISelMatcherOpt.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DAGISelMatcher.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DAGISelMatcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DFAPacketizerEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DFAPacketizerEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DisassemblerEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\DisassemblerEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\FastISelEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\FastISelEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\FixedLenDecoderEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\FixedLenDecoderEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\InstrInfoEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\InstrInfoEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\IntrinsicEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\IntrinsicEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\OptParserEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\OptParserEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\PseudoLoweringEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\PseudoLoweringEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\RegisterInfoEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\RegisterInfoEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\SetTheory.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\SetTheory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\SubtargetEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\SubtargetEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\TGValueTypes.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\TGValueTypes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\TableGen.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\TableGen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86DisassemblerTables.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\X86DisassemblerTables.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86ModRMFilters.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\X86ModRMFilters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86RecognizableInstr.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\X86RecognizableInstr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CTagsEmitter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\utils\TableGen\CTagsEmitter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\AsmWriterInst.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\AsmWriterInst.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenDAGPatterns.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenDAGPatterns.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenInstruction.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenInstruction.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenIntrinsics.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenIntrinsics.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenRegisters.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenRegisters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenSchedule.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenSchedule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\CodeGenTarget.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\CodeGenTarget.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\DAGISelMatcher.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\DAGISelMatcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\SequenceToOffsetTable.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\SequenceToOffsetTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\SetTheory.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\SetTheory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\TableGenBackends.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\TableGenBackends.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86DisassemblerShared.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\X86DisassemblerShared.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86DisassemblerTables.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\X86DisassemblerTables.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86ModRMFilters.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\X86ModRMFilters.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\utils\TableGen\X86RecognizableInstr.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\utils\TableGen\X86RecognizableInstr.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

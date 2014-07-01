@@ -58,19 +58,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)\..\build\VisualStudio2013\lib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCodeGen.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCodeGen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)\..\build\VisualStudio2013\lib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCodeGen.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCodeGen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(SolutionDir)\..\build\VisualStudio2013\lib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCodeGen.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCodeGen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(SolutionDir)\..\build\VisualStudio2013\lib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCodeGen.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCodeGen</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
@@ -78,7 +78,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -99,10 +99,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -113,7 +113,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4146;4180;4244;4267;4345;4351;4355;4503;4624;4800;4291</DisableSpecificWarnings>
@@ -134,10 +134,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -148,7 +148,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DisableSpecificWarnings>4146;4180;4244;4267;4345;4351;4355;4503;4624;4800;4291</DisableSpecificWarnings>
@@ -169,10 +169,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -183,7 +183,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
     <ClCompile>
       <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -203,10 +203,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_HAS_EXCEPTIONS=0;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen;C:\Users\nicolascapens\Development\SwiftShader\build\VisualStudio2013\include;C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\build\VisualStudio2013\lib\CodeGen;$(SolutionDir)\LLVM\lib\CodeGen;$(SolutionDir)\..\build\VisualStudio2013\include;$(SolutionDir)\LLVM\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -215,167 +215,167 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AllocationOrder.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AntiDepBreaker.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BranchFolding.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CriticalAntiDepBreaker.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InterferenceCache.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveDebugVariables.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeCalc.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIEliminationUtils.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PrologEpilogInserter.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBase.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterCoalescer.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Spiller.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SpillPlacement.h" />
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SplitKit.h" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\AllocationOrder.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Analysis.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BasicTargetTransformInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\BranchFolding.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CalcSpillWeights.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CallingConvLower.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CodeGen.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\CriticalAntiDepBreaker.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DFAPacketizer.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DeadMachineInstructionElim.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\DwarfEHPrepare.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\EarlyIfConversion.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\EdgeBundles.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ErlangGC.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExecutionDepsFix.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExpandISelPseudos.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ExpandPostRAPseudos.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCMetadata.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCMetadataPrinter.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\GCStrategy.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\IfConversion.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InlineSpiller.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\InterferenceCache.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\IntrinsicLowering.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\JITCodeEmitter.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LLVMTargetMachine.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LatencyPriorityQueue.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LexicalScopes.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveDebugVariables.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveInterval.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveIntervalAnalysis.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveIntervalUnion.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeCalc.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRangeEdit.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRegMatrix.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveRegUnits.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveStackAnalysis.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LiveVariables.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\LocalStackSlotAllocation.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBasicBlock.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBlockFrequencyInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBlockPlacement.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineBranchProbabilityInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCSE.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCodeEmitter.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineCopyPropagation.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineDominators.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunction.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionAnalysis.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionPass.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineFunctionPrinterPass.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineInstr.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineInstrBundle.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineLICM.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineLoopInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineModuleInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineModuleInfoImpls.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachinePassRegistry.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachinePostDominators.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineRegisterInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineSSAUpdater.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineScheduler.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineSink.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineTraceMetrics.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\MachineVerifier.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\OcamlGC.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\OptimizePHIs.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIElimination.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PHIEliminationUtils.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Passes.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PeepholeOptimizer.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PostRASchedulerList.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ProcessImplicitDefs.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PrologEpilogInserter.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\PseudoSourceValue.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBase.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocBasic.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocFast.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocGreedy.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegAllocPBQP.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterClassInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterCoalescer.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterPressure.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\RegisterScavenging.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAG.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAGInstrs.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScheduleDAGPrinter.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ScoreboardHazardRecognizer.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\ShadowStackGC.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SjLjEHPrepare.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SlotIndexes.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SpillPlacement.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\Spiller.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\SplitKit.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackColoring.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackProtector.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackSlotColoring.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\StackMaps.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TailDuplication.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetFrameLoweringImpl.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetInstrInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetLoweringBase.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetLoweringObjectFileImpl.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetOptionsImpl.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetRegisterInfo.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TargetSchedule.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\TwoAddressInstructionPass.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\UnreachableBlockElim.cpp" />
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\CodeGen\VirtRegMap.cpp" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\AllocationOrder.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\AntiDepBreaker.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\BranchFolding.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\CriticalAntiDepBreaker.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\InterferenceCache.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveDebugVariables.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveRangeCalc.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\PHIEliminationUtils.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\PrologEpilogInserter.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\RegAllocBase.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\RegisterCoalescer.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\Spiller.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\SpillPlacement.h" />
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\CodeGen\SplitKit.h" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\AggressiveAntiDepBreaker.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\AllocationOrder.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\Analysis.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\BasicTargetTransformInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\BranchFolding.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\CalcSpillWeights.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\CallingConvLower.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\CodeGen.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\CriticalAntiDepBreaker.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\DFAPacketizer.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\DeadMachineInstructionElim.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\DwarfEHPrepare.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\EarlyIfConversion.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\EdgeBundles.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ErlangGC.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ExecutionDepsFix.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ExpandISelPseudos.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ExpandPostRAPseudos.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\GCMetadata.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\GCMetadataPrinter.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\GCStrategy.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\IfConversion.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\InlineSpiller.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\InterferenceCache.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\IntrinsicLowering.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\JITCodeEmitter.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LLVMTargetMachine.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LatencyPriorityQueue.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LexicalScopes.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveDebugVariables.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveInterval.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveIntervalAnalysis.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveIntervalUnion.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveRangeCalc.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveRangeEdit.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveRegMatrix.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveRegUnits.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveStackAnalysis.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LiveVariables.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\LocalStackSlotAllocation.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineBasicBlock.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineBlockFrequencyInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineBlockPlacement.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineBranchProbabilityInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineCSE.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineCodeEmitter.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineCopyPropagation.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineDominators.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineFunction.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineFunctionAnalysis.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineFunctionPass.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineFunctionPrinterPass.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineInstr.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineInstrBundle.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineLICM.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineLoopInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineModuleInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineModuleInfoImpls.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachinePassRegistry.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachinePostDominators.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineRegisterInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineSSAUpdater.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineScheduler.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineSink.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineTraceMetrics.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\MachineVerifier.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\OcamlGC.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\OptimizePHIs.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\PHIElimination.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\PHIEliminationUtils.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\Passes.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\PeepholeOptimizer.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\PostRASchedulerList.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ProcessImplicitDefs.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\PrologEpilogInserter.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\PseudoSourceValue.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegAllocBase.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegAllocBasic.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegAllocFast.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegAllocGreedy.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegAllocPBQP.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegisterClassInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegisterCoalescer.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegisterPressure.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\RegisterScavenging.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ScheduleDAG.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ScheduleDAGInstrs.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ScheduleDAGPrinter.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ScoreboardHazardRecognizer.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\ShadowStackGC.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\SjLjEHPrepare.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\SlotIndexes.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\SpillPlacement.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\Spiller.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\SplitKit.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\StackColoring.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\StackProtector.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\StackSlotColoring.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\StackMaps.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TailDuplication.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetFrameLoweringImpl.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetInstrInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetLoweringBase.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetLoweringObjectFileImpl.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetOptionsImpl.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetRegisterInfo.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TargetSchedule.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\TwoAddressInstructionPass.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\UnreachableBlockElim.cpp" />
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\CodeGen\VirtRegMap.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Analysis/LLVMAnalysis.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Analysis/LLVMAnalysis.vcxproj">
       <Project>C7D1BF0A-AF86-4B14-B360-DA4D4C045AAA</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/IR/LLVMCore.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/IR/LLVMCore.vcxproj">
       <Project>B3BE2437-A442-404A-B538-A349F2805FBC</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Transforms/InstCombine/LLVMInstCombine.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Transforms/InstCombine/LLVMInstCombine.vcxproj">
       <Project>EF1B1207-4290-472A-B7A6-63DF73762226</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/MC/LLVMMC.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/MC/LLVMMC.vcxproj">
       <Project>966C9061-CC59-4BA1-BBA4-F76A1AF27055</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Transforms/ObjCARC/LLVMObjCARCOpts.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Transforms/ObjCARC/LLVMObjCARCOpts.vcxproj">
       <Project>6057A50C-4072-4570-97F1-BA60BD25DDCB</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Object/LLVMObject.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Object/LLVMObject.vcxproj">
       <Project>CA3C418A-4D90-4513-8E58-D24DF60B2335</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Transforms/Scalar/LLVMScalarOpts.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Transforms/Scalar/LLVMScalarOpts.vcxproj">
       <Project>3007CC85-C028-4CBB-91FA-013836D0AC56</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Support/LLVMSupport.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Support/LLVMSupport.vcxproj">
       <Project>56D9BEB3-EFE1-4509-97A9-98E63737FC99</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Target/LLVMTarget.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Target/LLVMTarget.vcxproj">
       <Project>B176193B-CAF2-4840-B83D-6E46043AEF44</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Transforms/Utils/LLVMTransformUtils.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Transforms/Utils/LLVMTransformUtils.vcxproj">
       <Project>8B063266-AB49-4A28-A543-2CE7C41A5D06</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/lib/Analysis/IPA/LLVMipa.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/lib/Analysis/IPA/LLVMipa.vcxproj">
       <Project>4DD30436-47B8-4297-9B82-1D82C55E5B70</Project>
     </ProjectReference>
-    <ProjectReference Include="C:/Users/nicolascapens/Development/SwiftShader/build/VisualStudio2013/include/llvm/IR/intrinsics_gen.vcxproj">
+    <ProjectReference Include="$(SolutionDir)/../build/VisualStudio2013/include/llvm/IR/intrinsics_gen.vcxproj">
       <Project>B2365083-A96B-48BE-A03C-DB90FAC92B25</Project>
     </ProjectReference>
   </ItemGroup>

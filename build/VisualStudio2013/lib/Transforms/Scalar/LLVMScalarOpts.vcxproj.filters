@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\ADCE.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\ADCE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\CodeGenPrepare.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\CodeGenPrepare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\ConstantProp.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\ConstantProp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\CorrelatedValuePropagation.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\CorrelatedValuePropagation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\DCE.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\DCE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\DeadStoreElimination.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\DeadStoreElimination.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\EarlyCSE.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\EarlyCSE.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\GlobalMerge.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\GlobalMerge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\GVN.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\GVN.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\IndVarSimplify.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\IndVarSimplify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\JumpThreading.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\JumpThreading.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LICM.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LICM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopDeletion.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopDeletion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopIdiomRecognize.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopIdiomRecognize.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopInstSimplify.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopInstSimplify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopRotation.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopRotation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopStrengthReduce.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopStrengthReduce.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopRerollPass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopRerollPass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopUnrollPass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopUnrollPass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LoopUnswitch.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LoopUnswitch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\LowerAtomic.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\LowerAtomic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\MemCpyOptimizer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\MemCpyOptimizer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\PartiallyInlineLibCalls.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\PartiallyInlineLibCalls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\Reassociate.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\Reassociate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\Reg2Mem.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\Reg2Mem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\SampleProfile.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\SampleProfile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\SCCP.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\SCCP.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\SROA.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\SROA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\Scalar.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\Scalar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\ScalarReplAggregates.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\ScalarReplAggregates.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\SimplifyCFGPass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\SimplifyCFGPass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\FlattenCFGPass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\FlattenCFGPass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\Sink.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\Sink.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\StructurizeCFG.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\StructurizeCFG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Scalar\TailRecursionElimination.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Scalar\TailRecursionElimination.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

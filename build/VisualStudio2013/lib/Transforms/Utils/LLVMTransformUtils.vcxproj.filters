@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\BasicBlockUtils.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\BasicBlockUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\BreakCriticalEdges.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\BreakCriticalEdges.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\BuildLibCalls.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\BuildLibCalls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\BypassSlowDivision.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\BypassSlowDivision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\CloneFunction.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\CloneFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\CloneModule.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\CloneModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\CmpInstAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\CmpInstAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\CodeExtractor.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\CodeExtractor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\DemoteRegToStack.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\DemoteRegToStack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\GlobalStatus.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\GlobalStatus.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\InlineFunction.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\InlineFunction.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\InstructionNamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\InstructionNamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\IntegerDivision.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\IntegerDivision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LCSSA.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LCSSA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\Local.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\Local.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LoopSimplify.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LoopSimplify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LoopUnroll.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LoopUnroll.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LoopUnrollRuntime.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LoopUnrollRuntime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LowerExpectIntrinsic.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LowerExpectIntrinsic.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LowerInvoke.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LowerInvoke.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\LowerSwitch.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\LowerSwitch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\Mem2Reg.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\Mem2Reg.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\MetaRenamer.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\MetaRenamer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\ModuleUtils.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\ModuleUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\PromoteMemoryToRegister.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\PromoteMemoryToRegister.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\SSAUpdater.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\SSAUpdater.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\SimplifyCFG.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\SimplifyCFG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\FlattenCFG.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\FlattenCFG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\SimplifyIndVar.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\SimplifyIndVar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\SimplifyInstructions.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\SimplifyInstructions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\SimplifyLibCalls.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\SimplifyLibCalls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\SpecialCaseList.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\SpecialCaseList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\UnifyFunctionExitNodes.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\UnifyFunctionExitNodes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\Utils.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\Utils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Utils\ValueMapper.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\Utils\ValueMapper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

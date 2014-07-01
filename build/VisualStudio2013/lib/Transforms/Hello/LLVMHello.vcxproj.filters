@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\Hello\CMakeLists.txt" />
+    <CustomBuild Include="$(SolutionDir)\LLVM\lib\Transforms\Hello\CMakeLists.txt" />
     <CustomBuild Include="..\..\..\CMakeFiles\aa80f28095e0b39c1fe6e9f18a20a3c1\LLVMHello.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\ExecutionEngine\MCJIT\MCJIT.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\ExecutionEngine\MCJIT\MCJIT.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\ExecutionEngine\MCJIT\SectionMemoryManager.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\ExecutionEngine\MCJIT\SectionMemoryManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\ExecutionEngine\MCJIT\MCJIT.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\ExecutionEngine\MCJIT\MCJIT.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

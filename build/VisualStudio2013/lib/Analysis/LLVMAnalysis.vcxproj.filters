@@ -1,157 +1,157 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\AliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\AliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\AliasAnalysisCounter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\AliasAnalysisCounter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\AliasAnalysisEvaluator.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\AliasAnalysisEvaluator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\AliasDebugger.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\AliasDebugger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\AliasSetTracker.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\AliasSetTracker.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\Analysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\Analysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\BasicAliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\BasicAliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\BlockFrequencyInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\BlockFrequencyInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\BranchProbabilityInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\BranchProbabilityInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\CFG.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\CFG.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\CFGPrinter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\CFGPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\CaptureTracking.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\CaptureTracking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\CostModel.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\CostModel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\CodeMetrics.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\CodeMetrics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ConstantFolding.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ConstantFolding.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\Delinearization.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\Delinearization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\DependenceAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\DependenceAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\DomPrinter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\DomPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\DominanceFrontier.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\DominanceFrontier.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\IVUsers.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\IVUsers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\InstCount.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\InstCount.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\InstructionSimplify.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\InstructionSimplify.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\Interval.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\Interval.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\IntervalPartition.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\IntervalPartition.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\LazyValueInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\LazyValueInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\LibCallAliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\LibCallAliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\LibCallSemantics.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\LibCallSemantics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\Lint.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\Lint.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\Loads.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\Loads.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\LoopInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\LoopInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\LoopPass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\LoopPass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\MemDepPrinter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\MemDepPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\MemoryBuiltins.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\MemoryBuiltins.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\MemoryDependenceAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\MemoryDependenceAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ModuleDebugInfoPrinter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ModuleDebugInfoPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\NoAliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\NoAliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\PHITransAddr.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\PHITransAddr.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\PostDominators.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\PostDominators.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\PtrUseVisitor.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\PtrUseVisitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\RegionInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\RegionInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\RegionPass.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\RegionPass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\RegionPrinter.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\RegionPrinter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ScalarEvolution.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ScalarEvolution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ScalarEvolutionAliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ScalarEvolutionAliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ScalarEvolutionExpander.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ScalarEvolutionExpander.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ScalarEvolutionNormalization.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ScalarEvolutionNormalization.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\SparsePropagation.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\SparsePropagation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\TargetTransformInfo.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\TargetTransformInfo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\Trace.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\Trace.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\TypeBasedAliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\TypeBasedAliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Analysis\ValueTracking.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Analysis\ValueTracking.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

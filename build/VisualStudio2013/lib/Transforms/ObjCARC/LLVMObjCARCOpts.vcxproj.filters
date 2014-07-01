@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARC.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARC.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCOpts.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCOpts.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCExpand.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCExpand.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCAPElim.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCAPElim.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCAliasAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCAliasAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCUtil.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCContract.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCContract.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\DependencyAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\DependencyAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ProvenanceAnalysis.cpp">
+    <ClCompile Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ProvenanceAnalysis.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ARCRuntimeEntryPoints.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ARCRuntimeEntryPoints.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\DependencyAnalysis.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\DependencyAnalysis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARC.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARC.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ObjCARCAliasAnalysis.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ObjCARCAliasAnalysis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\nicolascapens\Development\SwiftShader\src\LLVM\lib\Transforms\ObjCARC\ProvenanceAnalysis.h">
+    <ClInclude Include="$(SolutionDir)\LLVM\lib\Transforms\ObjCARC\ProvenanceAnalysis.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
