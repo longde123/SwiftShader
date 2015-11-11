@@ -24,7 +24,11 @@
 
 #include <EGL/eglext.h>
 
-static sw::Thread::LocalStorageKey currentTLS = TLS_OUT_OF_INDEXES;
+static sw::Thread::LocalStorageKey currentTLS() {
+	static sw::Thread::LocalStorageKey rval =
+		sw::Thread::allocateLocalStorageKey();
+	return rval;
+}
 
 #if !defined(_MSC_VER)
 #define CONSTRUCTOR __attribute__((constructor))
@@ -42,7 +46,7 @@ static void eglAttachThread()
 
     if(current)
     {
-        sw::Thread::setLocalStorage(currentTLS, current);
+        sw::Thread::setLocalStorage(currentTLS(), current);
 
         current->error = EGL_SUCCESS;
         current->API = EGL_OPENGL_ES_API;
@@ -57,7 +61,7 @@ static void eglDetachThread()
 {
     TRACE("()");
 
-	egl::Current *current = (egl::Current*)sw::Thread::getLocalStorage(currentTLS);
+	egl::Current *current = (egl::Current*)sw::Thread::getLocalStorage(currentTLS());
 
 	if(current)
 	{
@@ -79,14 +83,6 @@ CONSTRUCTOR static void eglAttachProcess()
             fclose(debug);
         }
 	#endif
-
-    currentTLS = sw::Thread::allocateLocalStorageKey();
-
-    if(currentTLS == TLS_OUT_OF_INDEXES)
-    {
-        return;
-    }
-
 	eglAttachThread();
 }
 
@@ -95,7 +91,7 @@ DESTRUCTOR static void eglDetachProcess()
     TRACE("()");
 
 	eglDetachThread();
-	sw::Thread::freeLocalStorageKey(currentTLS);
+	sw::Thread::freeLocalStorageKey(currentTLS());
 }
 
 #if defined(_WIN32)
@@ -167,14 +163,14 @@ namespace egl
 {
 static Current *eglGetCurrent(void)
 {
-	Current *current = (Current*)sw::Thread::getLocalStorage(currentTLS);
+	Current *current = (Current*)sw::Thread::getLocalStorage(currentTLS());
 
 	if(!current)
 	{
 		eglAttachThread();
 	}
 
-	return (Current*)sw::Thread::getLocalStorage(currentTLS);
+	return (Current*)sw::Thread::getLocalStorage(currentTLS());
 }
 
 void setCurrentError(EGLint error)
