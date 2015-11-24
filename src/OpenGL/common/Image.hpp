@@ -185,10 +185,10 @@ public:
 		             GLPixelTypeFromAndroid(nativeBuffer->format),
 		             nativeBuffer->stride),
 		  nativeBuffer(nativeBuffer)
-{
-    nativeBuffer->common.incRef(&nativeBuffer->common);
-    markShared();
-}
+	{
+		nativeBuffer->common.incRef(&nativeBuffer->common);
+		markShared();
+	}
 
 private:
 	ANativeWindowBuffer *nativeBuffer;
