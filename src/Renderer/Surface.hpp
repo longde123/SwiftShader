@@ -243,7 +243,7 @@ namespace sw
 
 	public:
 		Surface(int width, int height, int depth, Format format, void *pixels, int pitch, int slice);
-		Surface(Resource *texture, int width, int height, int depth, Format format, bool lockable, bool renderTarget);
+		Surface(Resource *texture, int width, int height, int depth, Format format, bool lockable, bool renderTarget, int pitchP = 0);
 		
 		virtual ~Surface();
 
