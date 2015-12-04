@@ -777,7 +777,7 @@ void BufferData(GLenum target, GLsizeiptr size, const GLvoid* data, GLenum usage
 
 	if(context)
 	{
-		es2::Buffer *buffer;
+		es2::Buffer *buffer = nullptr;
 		if(!context->getBuffer(target, &buffer))
 		{
 			return error(GL_INVALID_ENUM);
@@ -810,7 +810,7 @@ void BufferSubData(GLenum target, GLintptr offset, GLsizeiptr size, const GLvoid
 
 	if(context)
 	{
-		es2::Buffer *buffer;
+		es2::Buffer *buffer = nullptr;
 		if(!context->getBuffer(target, &buffer))
 		{
 			return error(GL_INVALID_ENUM);
