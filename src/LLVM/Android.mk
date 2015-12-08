@@ -412,7 +412,6 @@ LOCAL_CFLAGS += -std=c++11
 
 LOCAL_C_INCLUDES += \
 	bionic \
-	$(GCE_STLPORT_INCLUDES) \
 	$(LOCAL_PATH)/include-android \
 	$(LOCAL_PATH)/include \
 	$(LOCAL_PATH)/lib/Target/X86 \

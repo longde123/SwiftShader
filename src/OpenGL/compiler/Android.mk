@@ -2,7 +2,6 @@ LOCAL_PATH:= $(call my-dir)
 
 COMMON_C_INCLUDES := \
 	bionic \
-	$(GCE_STLPORT_INCLUDES) \
 	$(LOCAL_PATH)/../include \
 	$(LOCAL_PATH)/../ \
 	$(LOCAL_PATH)/../../ \
@@ -88,5 +87,6 @@ LOCAL_CFLAGS += \
 	-UNDEBUG \
 	-g \
 	-O0
+
 LOCAL_C_INCLUDES := $(COMMON_C_INCLUDES)
 include $(BUILD_STATIC_LIBRARY)

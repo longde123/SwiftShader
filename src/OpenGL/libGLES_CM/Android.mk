@@ -16,7 +16,6 @@ COMMON_CFLAGS := \
 	-Wno-overloaded-virtual \
 	-Xclang -fuse-init-array
 
-
 COMMON_SRC_FILES := \
 	Buffer.cpp \
 	Context.cpp \
@@ -33,18 +32,17 @@ COMMON_SRC_FILES := \
 
 COMMON_C_INCLUDES := \
 	bionic \
-	$(GCE_STLPORT_INCLUDES) \
-        $(LOCAL_PATH)/../include \
-        $(LOCAL_PATH)/../ \
-        $(LOCAL_PATH)/../../ \
-        $(LOCAL_PATH)/../../LLVM/include-android \
-        $(LOCAL_PATH)/../../LLVM/include-linux \
-        $(LOCAL_PATH)/../../LLVM/include \
-        $(LOCAL_PATH)/../../LLVM/lib/Target/X86 \
-        $(LOCAL_PATH)/../../Renderer/ \
-        $(LOCAL_PATH)/../../Common/ \
-        $(LOCAL_PATH)/../../Shader/ \
-        $(LOCAL_PATH)/../../Main/
+	$(LOCAL_PATH)/../include \
+	$(LOCAL_PATH)/../ \
+	$(LOCAL_PATH)/../../ \
+	$(LOCAL_PATH)/../../LLVM/include-android \
+	$(LOCAL_PATH)/../../LLVM/include-linux \
+	$(LOCAL_PATH)/../../LLVM/include \
+	$(LOCAL_PATH)/../../LLVM/lib/Target/X86 \
+	$(LOCAL_PATH)/../../Renderer/ \
+	$(LOCAL_PATH)/../../Common/ \
+	$(LOCAL_PATH)/../../Shader/ \
+	$(LOCAL_PATH)/../../Main/
 
 COMMON_STATIC_LIBRARIES := libLLVM_swiftshader
 
@@ -54,8 +52,13 @@ COMMON_SHARED_LIBRARIES := \
 	libcutils \
 	libhardware \
 	libui \
-	libutils \
-	$(GCE_STLPORT_LIBS)
+	libutils
+
+# Marshmallow does not have stlport, but comes with libc++ by default
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -lt 23 && echo PreMarshmallow),PreMarshmallow)
+COMMON_SHARED_LIBRARIES += libstlport
+COMMON_C_INCLUDES += external/stlport/stlport
+endif
 
 COMMON_LDFLAGS := \
 	-Wl,--gc-sections \

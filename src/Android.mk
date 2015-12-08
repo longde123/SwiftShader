@@ -2,15 +2,14 @@ LOCAL_PATH:= $(call my-dir)
 
 COMMON_C_INCLUDES += \
 	bionic \
-	$(GCE_STLPORT_INCLUDES) \
-        $(LOCAL_PATH)/OpenGL/include \
-        $(LOCAL_PATH)/OpenGL/ \
-        $(LOCAL_PATH) \
-        $(LOCAL_PATH)/Renderer/ \
-        $(LOCAL_PATH)/Common/ \
-        $(LOCAL_PATH)/Shader/ \
-        $(LOCAL_PATH)/LLVM/include \
-        $(LOCAL_PATH)/Main/
+	$(LOCAL_PATH)/OpenGL/include \
+	$(LOCAL_PATH)/OpenGL/ \
+	$(LOCAL_PATH) \
+	$(LOCAL_PATH)/Renderer/ \
+	$(LOCAL_PATH)/Common/ \
+	$(LOCAL_PATH)/Shader/ \
+	$(LOCAL_PATH)/LLVM/include \
+	$(LOCAL_PATH)/Main/
 
 COMMON_SRC_FILES := \
 	Common/CPUID.cpp \
