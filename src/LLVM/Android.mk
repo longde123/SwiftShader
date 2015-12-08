@@ -416,4 +416,9 @@ LOCAL_C_INCLUDES += \
 	$(LOCAL_PATH)/include \
 	$(LOCAL_PATH)/lib/Target/X86 \
 
+# Marshmallow does not have stlport, but comes with libc++ by default
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -lt 23 && echo PreMarshmallow),PreMarshmallow)
+LOCAL_C_INCLUDES += external/stlport/stlport
+endif
+
 include $(BUILD_STATIC_LIBRARY)

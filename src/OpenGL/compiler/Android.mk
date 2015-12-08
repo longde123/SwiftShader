@@ -14,6 +14,11 @@ COMMON_C_INCLUDES := \
 	$(LOCAL_PATH)/../../Shader/ \
 	$(LOCAL_PATH)/../../Main/
 
+# Marshmallow does not have stlport, but comes with libc++ by default
+ifeq ($(shell test $(PLATFORM_SDK_VERSION) -lt 23 && echo PreMarshmallow),PreMarshmallow)
+COMMON_C_INCLUDES += external/stlport/stlport
+endif
+
 COMMON_CFLAGS := \
 	-DLOG_TAG=\"swiftshader_compiler\" \
 	-Wno-unused-parameter \
