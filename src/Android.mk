@@ -98,7 +98,9 @@ COMMON_CFLAGS := \
 	-std=c++11
 
 ifneq ($(filter gce_x86 gce calypso, $(TARGET_DEVICE)),)
-COMMON_CFLAGS += -DDISPLAY_LOGO=0
+COMMON_CFLAGS +=
+	-DDISPLAY_LOGO=0 \
+	-DTAG_JIT_CODE_MEMORY
 endif
 
 ifneq (16,${PLATFORM_SDK_VERSION})
