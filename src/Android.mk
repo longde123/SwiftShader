@@ -97,8 +97,8 @@ COMMON_CFLAGS := \
 	-DANDROID_PLATFORM_SDK_VERSION=$(PLATFORM_SDK_VERSION) \
 	-std=c++11
 
-ifneq ($(filter gce_x86 gce calypso, $(TARGET_DEVICE)),)
-COMMON_CFLAGS +=
+ifneq ($(filter gce gce% calypso, $(TARGET_DEVICE)),)
+COMMON_CFLAGS += \
 	-DDISPLAY_LOGO=0 \
 	-DTAG_JIT_CODE_MEMORY
 endif
