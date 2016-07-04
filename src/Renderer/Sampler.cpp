@@ -71,6 +71,9 @@ namespace sw
 		swizzleB = SWIZZLE_BLUE;
 		swizzleA = SWIZZLE_ALPHA;
 
+		compFunc = COMPARE_FUNC_LEQUAL;
+		compMode = COMPARE_MODE_NONE;
+
 		texture.LOD = 0.0f;
 		exp2LOD = 1.0f;
 
@@ -103,6 +106,8 @@ namespace sw
 			state.swizzleG = swizzleG;
 			state.swizzleB = swizzleB;
 			state.swizzleA = swizzleA;
+			state.compFunc = compFunc;
+			state.compMode = compMode;
 
 			#if PERF_PROFILE
 				state.compressedFormat = Surface::isCompressed(externalTextureFormat);
@@ -337,6 +342,16 @@ namespace sw
 	void Sampler::setSwizzleA(SwizzleType swizzleA)
 	{
 		this->swizzleA = swizzleA;
+	}
+
+	void Sampler::setCompFunc(CompareFunc compFunc)
+	{
+		this->compFunc = compFunc;
+	}
+
+	void Sampler::setCompMode(CompareMode compMode)
+	{
+		this->compMode = compMode;
 	}
 
 	void Sampler::setBaseLevel(int baseLevel)

@@ -3046,7 +3046,7 @@ void Context::applyTextures(sw::SamplerType samplerType)
 
 			if(texture->isSamplerComplete())
 			{
-				GLenum wrapS, wrapT, wrapR, minFilter, magFilter;
+				GLenum wrapS, wrapT, wrapR, minFilter, magFilter, compFunc, compMode;
 				GLfloat minLOD, maxLOD;
 
 				Sampler *samplerObject = mState.sampler[textureUnit];
@@ -3059,6 +3059,8 @@ void Context::applyTextures(sw::SamplerType samplerType)
 					magFilter = samplerObject->getMagFilter();
 					minLOD = samplerObject->getMinLod();
 					maxLOD = samplerObject->getMaxLod();
+					compFunc = samplerObject->getComparisonFunc();
+					compMode = samplerObject->getComparisonMode();
 				}
 				else
 				{
@@ -3069,6 +3071,8 @@ void Context::applyTextures(sw::SamplerType samplerType)
 					magFilter = texture->getMagFilter();
 					minLOD = texture->getMinLOD();
 					maxLOD = texture->getMaxLOD();
+					compFunc = texture->getCompareFunc();
+					compMode = texture->getCompareMode();
 				}
 				GLfloat maxAnisotropy = texture->getMaxAnisotropy();
 
@@ -3082,6 +3086,8 @@ void Context::applyTextures(sw::SamplerType samplerType)
 				device->setAddressingModeU(samplerType, samplerIndex, es2sw::ConvertTextureWrap(wrapS));
 				device->setAddressingModeV(samplerType, samplerIndex, es2sw::ConvertTextureWrap(wrapT));
 				device->setAddressingModeW(samplerType, samplerIndex, es2sw::ConvertTextureWrap(wrapR));
+				device->setCompFunc(samplerType, samplerIndex, es2sw::ConvertCompareFunc(compFunc));
+				device->setCompMode(samplerType, samplerIndex, es2sw::ConvertCompareMode(compMode));
 				device->setSwizzleR(samplerType, samplerIndex, es2sw::ConvertSwizzleType(swizzleR));
 				device->setSwizzleG(samplerType, samplerIndex, es2sw::ConvertSwizzleType(swizzleG));
 				device->setSwizzleB(samplerType, samplerIndex, es2sw::ConvertSwizzleType(swizzleB));

@@ -480,6 +480,24 @@ namespace sw
 		else ASSERT(false);
 	}
 
+	void PixelProcessor::setCompFunc(unsigned int sampler, CompareFunc compFunc)
+	{
+		if(sampler < TEXTURE_IMAGE_UNITS)
+		{
+			context->sampler[sampler].setCompFunc(compFunc);
+		}
+		else ASSERT(false);
+	}
+
+	void PixelProcessor::setCompMode(unsigned int sampler, CompareMode compMode)
+	{
+		if(sampler < TEXTURE_IMAGE_UNITS)
+		{
+			context->sampler[sampler].setCompMode(compMode);
+		}
+		else ASSERT(false);
+	}
+
 	void PixelProcessor::setBaseLevel(unsigned int sampler, int baseLevel)
 	{
 		if(sampler < TEXTURE_IMAGE_UNITS)

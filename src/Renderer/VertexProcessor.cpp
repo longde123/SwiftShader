@@ -638,6 +638,24 @@ namespace sw
 		else ASSERT(false);
 	}
 
+	void VertexProcessor::setCompFunc(unsigned int sampler, CompareFunc compFunc)
+	{
+		if(sampler < VERTEX_TEXTURE_IMAGE_UNITS)
+		{
+			context->sampler[TEXTURE_IMAGE_UNITS + sampler].setCompFunc(compFunc);
+		}
+		else ASSERT(false);
+	}
+
+	void VertexProcessor::setCompMode(unsigned int sampler, CompareMode compMode)
+	{
+		if(sampler < VERTEX_TEXTURE_IMAGE_UNITS)
+		{
+			context->sampler[TEXTURE_IMAGE_UNITS + sampler].setCompMode(compMode);
+		}
+		else ASSERT(false);
+	}
+
 	void VertexProcessor::setBaseLevel(unsigned int sampler, int baseLevel)
 	{
 		if(sampler < VERTEX_TEXTURE_IMAGE_UNITS)

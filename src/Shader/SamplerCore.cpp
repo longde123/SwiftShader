@@ -74,20 +74,25 @@ namespace sw
 		Float4 vvvv = v;
 		Float4 wwww = w;
 
+		// FIXME: Convert to fixed12 at higher level, when required
+		const short one = fixed12 ? 0x1000 : 0xFFFFu;
+
 		if(state.textureType == TEXTURE_NULL)
 		{
 			c.x = Short4(0x0000);
 			c.y = Short4(0x0000);
 			c.z = Short4(0x0000);
-
-			if(fixed12)   // FIXME: Convert to fixed12 at higher level, when required
-			{
-				c.w = Short4(0x1000);
-			}
-			else
-			{
-				c.w = Short4(0xFFFFu);   // FIXME
-			}
+			c.w = Short4(one, one, one, one);
+		}
+		else if(state.compMode == COMPARE_MODE_REF_TO_TEXTURE &&
+		        ((state.compFunc == COMPARE_FUNC_ALWAYS) || (state.compFunc == COMPARE_FUNC_NEVER)))
+		{
+			c.x = (state.compFunc == COMPARE_FUNC_ALWAYS) ?
+			      Short4(one, one, one, one) :
+			      Short4(0x0000, 0x0000, 0x0000, 0x0000);
+			c.y = Short4(0x0000, 0x0000, 0x0000, 0x0000);
+			c.z = Short4(0x0000, 0x0000, 0x0000, 0x0000);
+			c.w = Short4(one, one, one, one);
 		}
 		else
 		{
@@ -308,6 +313,14 @@ namespace sw
 		if(state.textureType == TEXTURE_NULL)
 		{
 			c.x = Float4(0.0f);
+			c.y = Float4(0.0f);
+			c.z = Float4(0.0f);
+			c.w = Float4(1.0f);
+		}
+		else if(state.compMode == COMPARE_MODE_REF_TO_TEXTURE &&
+		        ((state.compFunc == COMPARE_FUNC_ALWAYS) || (state.compFunc == COMPARE_FUNC_NEVER)))
+		{
+			c.x = (state.compFunc == COMPARE_FUNC_ALWAYS) ? Float4(1.0f) : Float4(0.0f);
 			c.y = Float4(0.0f);
 			c.z = Float4(0.0f);
 			c.w = Float4(1.0f);
@@ -2070,6 +2083,8 @@ namespace sw
 		int f2 = state.textureType == TEXTURE_CUBE ? 2 : 0;
 		int f3 = state.textureType == TEXTURE_CUBE ? 3 : 0;
 
+		bool shadowTexture = (state.compMode == COMPARE_MODE_REF_TO_TEXTURE);
+
 		// Read texels
 		switch(textureComponentCount())
 		{
@@ -2106,15 +2121,49 @@ namespace sw
 			c.x.z = *Pointer<Float>(buffer[f2] + index[2] * 4);
 			c.x.w = *Pointer<Float>(buffer[f3] + index[3] * 4);
 
-			if(state.textureFormat == FORMAT_D32FS8_SHADOW && state.textureFilter != FILTER_GATHER)
-			{
-				Float4 d = Min(Max(z, Float4(0.0f)), Float4(1.0f));
-
-				c.x = As<Float4>(As<Int4>(CmpNLT(c.x, d)) & As<Int4>(Float4(1.0f)));   // FIXME: Only less-equal?
-			}
+			shadowTexture |= (state.textureFormat == FORMAT_D32FS8_SHADOW && state.textureFilter != FILTER_GATHER);
 			break;
 		default:
 			ASSERT(false);
+		}
+
+		if(shadowTexture)
+		{
+			Float4 depth = Min(Max(z, Float4(0.0f)), Float4(1.0f));
+
+			Int4 condition;
+
+			switch(state.compFunc)
+			{
+			case COMPARE_FUNC_LEQUAL:
+				condition = CmpLE(depth, c.x);
+				break;
+			case COMPARE_FUNC_GEQUAL:
+				condition = CmpNLT(depth, c.x);
+				break;
+			case COMPARE_FUNC_LESS:
+				condition = CmpLT(depth, c.x);
+				break;
+			case COMPARE_FUNC_GREATER:
+				condition = CmpNLE(depth, c.x);
+				break;
+			case COMPARE_FUNC_EQUAL:
+				condition = CmpEQ(depth, c.x);
+				break;
+			case COMPARE_FUNC_NOTEQUAL:
+				condition = CmpNEQ(depth, c.x);
+				break;
+			case COMPARE_FUNC_ALWAYS:
+			case COMPARE_FUNC_NEVER:
+				// These 2 cases should have been handled earlier
+			default:
+				ASSERT(false);
+			}
+
+			c.x = As<Float4>(condition & As<Int4>(Float4(1.0f)));
+			c.y = Float4(0.0f);
+			c.z = Float4(0.0f);
+			c.w = Float4(1.0f);
 		}
 	}
 
