@@ -56,7 +56,7 @@ namespace sw
 
 				precacheDLL = LoadLibrary(dllName);
 				FILE *dir = fopen(dirName, "rb");
-				int ordinal = 1;
+				uintptr_t ordinal = 1;
 
 				while(precacheDLL && dir)
 				{
@@ -133,7 +133,7 @@ namespace sw
 						#else
 							for(int j = 1; j < codeSize - 4; j++)
 							{
-								unsigned char modRM_SIB = entry[j - 1];
+							//	unsigned char modRM_SIB = entry[j - 1];
 								uint64_t address = *(uint64_t*)&entry[j];
 
 							//	if((modRM_SIB & 0x05) == 0x05 && (address % 4) == 0)

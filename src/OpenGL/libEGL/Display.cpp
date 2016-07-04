@@ -200,7 +200,7 @@ void Display::terminate()
 
 	while(!mSharedImageNameSpace.empty())
 	{
-		destroySharedImage(reinterpret_cast<EGLImageKHR>(mSharedImageNameSpace.firstName()));
+		destroySharedImage(reinterpret_cast<EGLImageKHR>((intptr_t)mSharedImageNameSpace.firstName()));
 	}
 }
 
@@ -542,13 +542,13 @@ bool Display::isValidWindow(EGLNativeWindowType window)
 
 			return status == True;
 		}
+		return false;
 	#elif defined(__APPLE__)
 		return sw::OSX::IsValidWindow(window);
 	#else
 		#error "Display::isValidWindow unimplemented for this platform"
+		return false;
 	#endif
-
-	return false;
 }
 
 bool Display::hasExistingWindowSurface(EGLNativeWindowType window)
@@ -589,7 +589,7 @@ void *Display::getNativeDisplay() const
 
 EGLImageKHR Display::createSharedImage(Image *image)
 {
-	return reinterpret_cast<EGLImageKHR>(mSharedImageNameSpace.allocate(image));
+	return reinterpret_cast<EGLImageKHR>((intptr_t)mSharedImageNameSpace.allocate(image));
 }
 
 bool Display::destroySharedImage(EGLImageKHR image)

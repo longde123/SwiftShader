@@ -776,7 +776,7 @@ namespace es2
 			return error(GL_INVALID_ENUM, false);
 		}
 
-		if(internalformat != format)
+		if((GLenum)internalformat != format)
 		{
 			if(clientVersion < 3)
 			{
@@ -993,7 +993,7 @@ namespace es2
 
 		#undef VALIDATE_INTERNALFORMAT
 
-		if(internalformat != format && !validSizedInternalformat)
+		if((GLenum)internalformat != format && !validSizedInternalformat)
 		{
 			return error(GL_INVALID_OPERATION, false);
 		}
@@ -1180,7 +1180,7 @@ namespace es2
 		return false;
 	}
 
-	std::string ParseUniformName(const std::string &name, size_t *outSubscript)
+	std::string ParseUniformName(const std::string &name, unsigned int *outSubscript)
 	{
 		// Strip any trailing array operator and retrieve the subscript
 		size_t open = name.find_last_of('[');

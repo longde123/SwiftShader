@@ -234,10 +234,6 @@ namespace sw
 
 			sync->lock(sw::PRIVATE);
 
-			Routine *vertexRoutine;
-			Routine *setupRoutine;
-			Routine *pixelRoutine;
-
 			if(update || oldMultiSampleMask != context->multiSampleMask)
 			{
 				vertexState = VertexProcessor::update(drawType);
@@ -268,7 +264,9 @@ namespace sw
 					setupPrimitives = &Renderer::setupVertexTriangle;
 					batch = 1;
 					break;
-				default: ASSERT(false);
+				default:
+					ASSERT(false);
+					return;
 				}
 			}
 			else if(context->isDrawLine())

@@ -545,29 +545,29 @@ namespace sw
 			break;
 		case ALPHA_EQUAL:
 			cmp = CmpEQ(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4)));
-			aMask = SignMask(Pack(cmp, Short4(0x0000, 0x0000, 0x0000, 0x0000)));
+			aMask = SignMask(Pack(cmp, Short4(0x0000)));
 			break;
-		case ALPHA_NOTEQUAL:		// a != b ~ !(a == b)
-			cmp = CmpEQ(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4))) ^ Short4((short)0xFFFF, (short)0xFFFF, (short)0xFFFF, (short)0xFFFF);   // FIXME
-			aMask = SignMask(Pack(cmp, Short4(0x0000, 0x0000, 0x0000, 0x0000)));
+		case ALPHA_NOTEQUAL:       // a != b ~ !(a == b)
+			cmp = CmpEQ(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4))) ^ Short4(0xFFFFu);   // FIXME
+			aMask = SignMask(Pack(cmp, Short4(0x0000)));
 			break;
-		case ALPHA_LESS:			// a < b ~ b > a
+		case ALPHA_LESS:           // a < b ~ b > a
 			cmp = CmpGT(*Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4)), alpha);
-			aMask = SignMask(Pack(cmp, Short4(0x0000, 0x0000, 0x0000, 0x0000)));
+			aMask = SignMask(Pack(cmp, Short4(0x0000)));
 			break;
-		case ALPHA_GREATEREQUAL:	// a >= b ~ (a > b) || (a == b) ~ !(b > a)   // TODO: Approximate
+		case ALPHA_GREATEREQUAL:   // a >= b ~ (a > b) || (a == b) ~ !(b > a)   // TODO: Approximate
 			equal = CmpEQ(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4)));
 			cmp = CmpGT(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4)));
 			cmp |= equal;
-			aMask = SignMask(Pack(cmp, Short4(0x0000, 0x0000, 0x0000, 0x0000)));
+			aMask = SignMask(Pack(cmp, Short4(0x0000)));
 			break;
-		case ALPHA_LESSEQUAL:		// a <= b ~ !(a > b)
-			cmp = CmpGT(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4))) ^ Short4((short)0xFFFF, (short)0xFFFF, (short)0xFFFF, (short)0xFFFF);   // FIXME
-			aMask = SignMask(Pack(cmp, Short4(0x0000, 0x0000, 0x0000, 0x0000)));
+		case ALPHA_LESSEQUAL:      // a <= b ~ !(a > b)
+			cmp = CmpGT(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4))) ^ Short4(0xFFFFu);   // FIXME
+			aMask = SignMask(Pack(cmp, Short4(0x0000)));
 			break;
-		case ALPHA_GREATER:			// a > b
+		case ALPHA_GREATER:        // a > b
 			cmp = CmpGT(alpha, *Pointer<Short4>(data + OFFSET(DrawData,factor.alphaReference4)));
-			aMask = SignMask(Pack(cmp, Short4(0x0000, 0x0000, 0x0000, 0x0000)));
+			aMask = SignMask(Pack(cmp, Short4(0x0000)));
 			break;
 		default:
 			ASSERT(false);
@@ -1224,9 +1224,9 @@ namespace sw
 			current.z = pixel.z;
 			break;
 		case BLENDOP_NULL:
-			current.x = Short4(0x0000, 0x0000, 0x0000, 0x0000);
-			current.y = Short4(0x0000, 0x0000, 0x0000, 0x0000);
-			current.z = Short4(0x0000, 0x0000, 0x0000, 0x0000);
+			current.x = Short4(0x0000);
+			current.y = Short4(0x0000);
+			current.z = Short4(0x0000);
 			break;
 		default:
 			ASSERT(false);
@@ -1269,7 +1269,7 @@ namespace sw
 			current.w = pixel.w;
 			break;
 		case BLENDOP_NULL:
-			current.w = Short4(0x0000, 0x0000, 0x0000, 0x0000);
+			current.w = Short4(0x0000);
 			break;
 		default:
 			ASSERT(false);
@@ -1289,14 +1289,14 @@ namespace sw
 		switch(state.logicalOperation)
 		{
 		case LOGICALOP_CLEAR:
-			current.x = 0;
-			current.y = 0;
-			current.z = 0;
+			current.x = UShort4(0);
+			current.y = UShort4(0);
+			current.z = UShort4(0);
 			break;
 		case LOGICALOP_SET:
-			current.x = 0xFFFFu;
-			current.y = 0xFFFFu;
-			current.z = 0xFFFFu;
+			current.x = UShort4(0xFFFFu);
+			current.y = UShort4(0xFFFFu);
+			current.z = UShort4(0xFFFFu);
 			break;
 		case LOGICALOP_COPY:
 			ASSERT(false);   // Optimized out
@@ -1396,10 +1396,10 @@ namespace sw
 			case FORMAT_SRGB8_X8:
 			case FORMAT_SRGB8_A8:
 			case FORMAT_R8:
-				current.x = current.x - As<Short4>(As<UShort4>(current.x) >> 8) + Short4(0x0080, 0x0080, 0x0080, 0x0080);
-				current.y = current.y - As<Short4>(As<UShort4>(current.y) >> 8) + Short4(0x0080, 0x0080, 0x0080, 0x0080);
-				current.z = current.z - As<Short4>(As<UShort4>(current.z) >> 8) + Short4(0x0080, 0x0080, 0x0080, 0x0080);
-				current.w = current.w - As<Short4>(As<UShort4>(current.w) >> 8) + Short4(0x0080, 0x0080, 0x0080, 0x0080);
+				current.x = current.x - As<Short4>(As<UShort4>(current.x) >> 8) + Short4(0x0080);
+				current.y = current.y - As<Short4>(As<UShort4>(current.y) >> 8) + Short4(0x0080);
+				current.z = current.z - As<Short4>(As<UShort4>(current.z) >> 8) + Short4(0x0080);
+				current.w = current.w - As<Short4>(As<UShort4>(current.w) >> 8) + Short4(0x0080);
 				break;
 			default:
 				break;
@@ -2317,7 +2317,34 @@ namespace sw
 			break;
 		case FORMAT_R8I:
 		case FORMAT_R8UI:
-			ASSERT(false);
+			if(rgbaWriteMask & 0x00000001)
+			{
+				buffer = cBuffer + x;
+
+				UInt xyzw, packedCol;
+
+				xyzw = UInt(*Pointer<UShort>(buffer)) << 16;
+				buffer += *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+				xyzw |= UInt(*Pointer<UShort>(buffer));
+
+				Short4 tmpCol = Short4(As<Int4>(oC.x));
+				if(state.targetFormat[index] == FORMAT_R8I)
+				{
+					tmpCol = As<Short4>(Pack(tmpCol, tmpCol));
+				}
+				else
+				{
+					tmpCol = As<Short4>(Pack(As<UShort4>(tmpCol), As<UShort4>(tmpCol)));
+				}
+				packedCol = Extract(As<Int2>(tmpCol), 0);
+
+				packedCol = (packedCol & *Pointer<UInt>(constants + OFFSET(Constants, maskB4Q) + 8 * xMask)) |
+				            (xyzw & *Pointer<UInt>(constants + OFFSET(Constants, invMaskB4Q) + 8 * xMask));
+
+				*Pointer<UShort>(buffer) = UShort(packedCol >> 16);
+				buffer -= *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+				*Pointer<UShort>(buffer) = UShort(packedCol);
+			}
 			break;
 		case FORMAT_G32R32F:
 		case FORMAT_G32R32I:
@@ -2360,11 +2387,69 @@ namespace sw
 			break;
 		case FORMAT_G16R16I:
 		case FORMAT_G16R16UI:
-			ASSERT(false);
+			if((rgbaWriteMask & 0x00000003) != 0x0)
+			{
+				buffer = cBuffer + 4 * x;
+
+				UInt2 rgbaMask;
+				UShort4 packedCol = UShort4(As<Int4>(oC.x));
+				UShort4 value = *Pointer<UShort4>(buffer);
+				UInt2 mergedMask = *Pointer<UInt2>(constants + OFFSET(Constants, maskD01Q) + xMask * 8);
+				if((rgbaWriteMask & 0x3) != 0x3)
+				{
+					Int tmpMask = *Pointer<Int>(constants + OFFSET(Constants, maskW4Q[rgbaWriteMask & 0x3][0]));
+					rgbaMask = As<UInt2>(Int2(tmpMask, tmpMask));
+					mergedMask &= rgbaMask;
+				}
+				*Pointer<UInt2>(buffer) = (As<UInt2>(packedCol) & mergedMask) | (As<UInt2>(value) & ~mergedMask);
+
+				buffer += *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+
+				packedCol = UShort4(As<Int4>(oC.y));
+				value = *Pointer<UShort4>(buffer);
+				mergedMask = *Pointer<UInt2>(constants + OFFSET(Constants, maskD23Q) + xMask * 8);
+				if((rgbaWriteMask & 0x3) != 0x3)
+				{
+					mergedMask &= rgbaMask;
+				}
+				*Pointer<UInt2>(buffer) = (As<UInt2>(packedCol) & mergedMask) | (As<UInt2>(value) & ~mergedMask);
+			}
 			break;
 		case FORMAT_G8R8I:
 		case FORMAT_G8R8UI:
-			ASSERT(false);
+			if((rgbaWriteMask & 0x00000003) != 0x0)
+			{
+				buffer = cBuffer + 2 * x;
+
+				Int2 xyzw, packedCol;
+
+				xyzw = Insert(xyzw, *Pointer<Int>(buffer), 0);
+				buffer += *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+				xyzw = Insert(xyzw, *Pointer<Int>(buffer), 1);
+
+				if(state.targetFormat[index] == FORMAT_G8R8I)
+				{
+					packedCol = As<Int2>(Pack(Short4(As<Int4>(oC.x)), Short4(As<Int4>(oC.y))));
+				}
+				else
+				{
+					packedCol = As<Int2>(Pack(UShort4(As<Int4>(oC.x)), UShort4(As<Int4>(oC.y))));
+				}
+
+				UInt2 mergedMask = *Pointer<UInt2>(constants + OFFSET(Constants, maskW4Q) + xMask * 8);
+				if((rgbaWriteMask & 0x3) != 0x3)
+				{
+					Int tmpMask = *Pointer<Int>(constants + OFFSET(Constants, maskB4Q[5 * (rgbaWriteMask & 0x3)][0]));
+					UInt2 rgbaMask = As<UInt2>(Int2(tmpMask, tmpMask));
+					mergedMask &= rgbaMask;
+				}
+
+				packedCol = As<Int2>((As<UInt2>(packedCol) & mergedMask) | (As<UInt2>(xyzw) & ~mergedMask));
+
+				*Pointer<UInt>(buffer) = As<UInt>(Extract(packedCol, 1));
+				buffer -= *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+				*Pointer<UInt>(buffer) = As<UInt>(Extract(packedCol, 0));
+			}
 			break;
 		case FORMAT_X32B32G32R32F:
 		case FORMAT_A32B32G32R32F:
@@ -2444,11 +2529,76 @@ namespace sw
 			break;
 		case FORMAT_A16B16G16R16I:
 		case FORMAT_A16B16G16R16UI:
-			ASSERT(false);
+			if((rgbaWriteMask & 0x0000000F) != 0x0)
+			{
+				buffer = cBuffer + 8 * x;
+
+				UInt4 rgbaMask;
+				UShort8 value = *Pointer<UShort8>(buffer);
+				UShort8 packedCol = UShort8(UShort4(As<Int4>(oC.x)), UShort4(As<Int4>(oC.y)));
+				UInt4 mergedMask = *Pointer<UInt4>(constants + OFFSET(Constants, maskQ01X) + xMask * 16);
+				if((rgbaWriteMask & 0xF) != 0xF)
+				{
+					UInt2 tmpMask = *Pointer<UInt2>(constants + OFFSET(Constants, maskW4Q[rgbaWriteMask][0]));
+					rgbaMask = UInt4(tmpMask, tmpMask);
+					mergedMask &= rgbaMask;
+				}
+				*Pointer<UInt4>(buffer) = (As<UInt4>(packedCol) & mergedMask) | (As<UInt4>(value) & ~mergedMask);
+
+				buffer += *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+
+				value = *Pointer<UShort8>(buffer);
+				packedCol = UShort8(UShort4(As<Int4>(oC.z)), UShort4(As<Int4>(oC.w)));
+				mergedMask = *Pointer<UInt4>(constants + OFFSET(Constants, maskQ23X) + xMask * 16);
+				if((rgbaWriteMask & 0xF) != 0xF)
+				{
+					mergedMask &= rgbaMask;
+				}
+				*Pointer<UInt4>(buffer) = (As<UInt4>(packedCol) & mergedMask) | (As<UInt4>(value) & ~mergedMask);
+			}
 			break;
 		case FORMAT_A8B8G8R8I:
 		case FORMAT_A8B8G8R8UI:
-			ASSERT(false);
+			if((rgbaWriteMask & 0x0000000F) != 0x0)
+			{
+				UInt2 value, packedCol, mergedMask;
+
+				buffer = cBuffer + 4 * x;
+
+				if(state.targetFormat[index] == FORMAT_A8B8G8R8I)
+				{
+					packedCol = As<UInt2>(Pack(Short4(As<Int4>(oC.x)), Short4(As<Int4>(oC.y))));
+				}
+				else
+				{
+					packedCol = As<UInt2>(Pack(UShort4(As<Int4>(oC.x)), UShort4(As<Int4>(oC.y))));
+				}
+				value = *Pointer<UInt2>(buffer, 16);
+				mergedMask = *Pointer<UInt2>(constants + OFFSET(Constants, maskD01Q) + xMask * 8);
+				if(rgbaWriteMask != 0xF)
+				{
+					mergedMask &= *Pointer<UInt2>(constants + OFFSET(Constants, maskB4Q[rgbaWriteMask][0]));
+				}
+				*Pointer<UInt2>(buffer) = (packedCol & mergedMask) | (value & ~mergedMask);
+
+				buffer += *Pointer<Int>(data + OFFSET(DrawData, colorPitchB[index]));
+
+				if(state.targetFormat[index] == FORMAT_A8B8G8R8I)
+				{
+					packedCol = As<UInt2>(Pack(Short4(As<Int4>(oC.z)), Short4(As<Int4>(oC.w))));
+				}
+				else
+				{
+					packedCol = As<UInt2>(Pack(UShort4(As<Int4>(oC.z)), UShort4(As<Int4>(oC.w))));
+				}
+				value = *Pointer<UInt2>(buffer, 16);
+				mergedMask = *Pointer<UInt2>(constants + OFFSET(Constants, maskD23Q) + xMask * 8);
+				if(rgbaWriteMask != 0xF)
+				{
+					mergedMask &= *Pointer<UInt2>(constants + OFFSET(Constants, maskB4Q[rgbaWriteMask][0]));
+				}
+				*Pointer<UInt2>(buffer) = (packedCol & mergedMask) | (value & ~mergedMask);
+			}
 			break;
 		default:
 			ASSERT(false);

@@ -1005,6 +1005,7 @@ namespace sw
 		explicit UShort4(RValue<Float4> cast, bool saturate = false);
 
 		UShort4();
+		UShort4(unsigned short xyzw);
 		UShort4(unsigned short x, unsigned short y, unsigned short z, unsigned short w);
 		UShort4(RValue<UShort4> rhs);
 		UShort4(const UShort4 &rhs);
@@ -1070,7 +1071,7 @@ namespace sw
 		Short8(short c0, short c1, short c2, short c3, short c4, short c5, short c6, short c7);
 		Short8(RValue<Short8> rhs);
 	//	Short8(const Short8 &rhs);
-	//	Short8(const Reference<Short8> &rhs);
+		Short8(const Reference<Short8> &rhs);
 		Short8(RValue<Short4> lo, RValue<Short4> hi);
 
 	//	RValue<Short8> operator=(RValue<Short8> rhs) const;
@@ -1127,7 +1128,7 @@ namespace sw
 		UShort8(unsigned short c0, unsigned short c1, unsigned short c2, unsigned short c3, unsigned short c4, unsigned short c5, unsigned short c6, unsigned short c7);
 		UShort8(RValue<UShort8> rhs);
 	//	UShort8(const UShort8 &rhs);
-	//	UShort8(const Reference<UShort8> &rhs);
+		UShort8(const Reference<UShort8> &rhs);
 		UShort8(RValue<UShort4> lo, RValue<UShort4> hi);
 
 		RValue<UShort8> operator=(RValue<UShort8> rhs) const;
@@ -2436,6 +2437,8 @@ namespace sw
 		RValue<Pointer<T>> operator=(const Reference<Pointer<T>> &rhs) const;
 
 		Reference<T> operator*();
+		Reference<T> operator[](int index);
+		Reference<T> operator[](RValue<Int> index);
 
 		static llvm::Type *getType();
 
@@ -2465,7 +2468,6 @@ namespace sw
 
 		Reference<T> operator[](int index);
 		Reference<T> operator[](RValue<Int> index);
-		Reference<T> operator[](RValue<UInt> index);
 	};
 
 //	RValue<Array<T>> operator++(const Array<T> &val, int);   // Post-increment
@@ -2524,10 +2526,15 @@ namespace sw
 
 		Routine *operator()(const wchar_t *name, ...);
 
-	private:
+	protected:
 		Nucleus *core;
 		llvm::Function *function;
 		std::vector<llvm::Type*> arguments;
+	};
+
+	template<typename Return>
+	class Function<Return()> : public Function<Return(Void)>
+	{
 	};
 
 	template<int index, typename Return, typename... Arguments>
@@ -2857,6 +2864,22 @@ namespace sw
 	}
 
 	template<class T>
+	Reference<T> Pointer<T>::operator[](int index)
+	{
+		llvm::Value *element = Nucleus::createGEP(LValue::loadValue(), (llvm::Value*)Nucleus::createConstantInt(index));
+
+		return Reference<T>(element, alignment);
+	}
+
+	template<class T>
+	Reference<T> Pointer<T>::operator[](RValue<Int> index)
+	{
+		llvm::Value *element = Nucleus::createGEP(LValue::loadValue(), index.value);
+
+		return Reference<T>(element, alignment);
+	}
+
+	template<class T>
 	llvm::Type *Pointer<T>::getType()
 	{
 		return Nucleus::getPointerType(T::getType());
@@ -2877,14 +2900,6 @@ namespace sw
 
 	template<class T, int S>
 	Reference<T> Array<T, S>::operator[](RValue<Int> index)
-	{
-		llvm::Value *element = LValue::getAddress(index.value);
-
-		return Reference<T>(element);
-	}
-
-	template<class T, int S>
-	Reference<T> Array<T, S>::operator[](RValue<UInt> index)
 	{
 		llvm::Value *element = LValue::getAddress(index.value);
 
@@ -2968,7 +2983,10 @@ namespace sw
 		llvm::Type *types[] = {Arguments::getType()...};
 		for(llvm::Type *type : types)
 		{
-			arguments.push_back(type);
+			if(type != Void::getType())
+			{
+				arguments.push_back(type);
+			}
 		}
 
 		function = Nucleus::createFunction(Return::getType(), arguments);
