@@ -58,7 +58,7 @@ public:
 	IndexDataManager();
 	virtual ~IndexDataManager();
 
-	GLenum prepareIndexData(GLenum type, GLuint start, GLuint end, GLsizei count, Buffer *arrayElementBuffer, const void *indices, TranslatedIndexData *translated);
+	GLenum prepareIndexData(GLenum type, GLuint start, GLuint end, GLsizei count, Buffer *arrayElementBuffer, const void *indices, TranslatedIndexData *translated, bool primitiveRestart);
 
 	static std::size_t typeSize(GLenum type);
 

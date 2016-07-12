@@ -113,6 +113,16 @@ namespace sw
 		const Type type;
 	};
 
+	struct PrimitiveRestartData
+	{
+		PrimitiveRestartData() : reference(0)
+		{
+		}
+
+		volatile int reference;
+		std::vector<std::pair<int, int>> data;
+	};
+
 	struct DrawData
 	{
 		const Constants *constants;
@@ -212,6 +222,7 @@ namespace sw
 
 		DrawType drawType;
 		int batchSize;
+		bool primitiveRestart;
 
 		Routine *vertexRoutine;
 		Routine *setupRoutine;
@@ -243,12 +254,15 @@ namespace sw
 		int psDirtyConstB;
 
 		std::list<Query*> *queries;
+		PrimitiveRestartData *primitiveRestartData;
 
 		int clipFlags;
 
 		volatile int primitive;    // Current primitive to enter pipeline
 		volatile int count;        // Number of primitives to render
 		volatile int references;   // Remaining references to this draw call, 0 when done drawing, -1 when resources unlocked and slot is free
+		volatile int index;        // First index for current primitive
+		volatile unsigned int primitiveRestartDataIndex;
 
 		DrawData *data;
 	};
@@ -288,6 +302,9 @@ namespace sw
 				drawCall = 0;
 				firstPrimitive = 0;
 				primitiveCount = 0;
+				firstIndex = 0;
+				primitiveRestartDataIndex = 0;
+
 				visible = 0;
 				references = 0;
 			}
@@ -295,6 +312,9 @@ namespace sw
 			volatile int drawCall;
 			volatile int firstPrimitive;
 			volatile int primitiveCount;
+			volatile int firstIndex;
+			volatile unsigned int primitiveRestartDataIndex;
+
 			volatile int visible;
 			volatile int references;
 		};
@@ -321,7 +341,7 @@ namespace sw
 		void clear(void* pixel, Format format, Surface *dest, const SliceRect &dRect, unsigned int rgbaMask);
 		void blit(Surface *source, const SliceRect &sRect, Surface *dest, const SliceRect &dRect, bool filter);
 		void blit3D(Surface *source, Surface *dest);
-		void draw(DrawType drawType, unsigned int indexOffset, unsigned int count, bool update = true);
+		void draw(DrawType drawType, unsigned int indexOffset, unsigned int count, bool update = true, bool primitiveRestart = false, unsigned int indexCount = 0);
 
 		void setIndexBuffer(Resource *indexBuffer);
 
@@ -403,12 +423,21 @@ namespace sw
 		static void threadFunction(void *parameters);
 		void threadLoop(int threadIndex);
 		void taskLoop(int threadIndex);
+
+		bool isPrimitiveRestartIndex(const void *indicesArray, int unsigned index, DrawType type);
+		int parsePrimitiveRestartIndex(DrawType drawType, const void* indices, unsigned int indexCount, std::vector<std::pair<int, int>> *primitiveRestartData);
+		void advanceToNextBatch(DrawCall *draw, int firstPrimitive);
+
 		void findAvailableTasks();
 		void scheduleTask(int threadIndex);
 		void executeTask(int threadIndex);
 		void finishRendering(Task &pixelTask);
 
-		void processPrimitiveVertices(int unit, unsigned int start, unsigned int count, unsigned int loop, int thread);
+		void processPrimitiveVertices(int unit, unsigned int start, unsigned int startIndex, unsigned int triangleCount, int thread);
+		template <typename T> void processIndexedPrimitive(DrawCall *draw, T *indexBegin, T *index, unsigned int batch[][3], unsigned int triangleCount, unsigned int primitiveRestartDataIndex);
+		template <typename T> void processIndexedLineLoop(DrawCall *draw, T *indexBegin, T *index, unsigned int batch[][3], unsigned int triangleCount, unsigned int startPrimitive, unsigned int primitiveRestartDataIndex);
+		template <typename T> void processIndexedTriangleStrip(DrawCall *draw, T *indexBegin, T *index, unsigned int batch[][3], unsigned int triangleCount, unsigned int startPrimitive, unsigned int primitiveRestartDataIndex);
+		template <typename T> void processIndexedTriangleFan(DrawCall *draw, T *indexBegin, T *index, unsigned int batch[][3], unsigned int triangleCount, unsigned int startPrimitive, unsigned int primitiveRestartDataIndex);
 
 		int setupSolidTriangles(int batch, int count);
 		int setupWireframeTriangle(int batch, int count);

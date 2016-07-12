@@ -48,7 +48,7 @@ namespace es2
 		void clearStencil(unsigned int stencil, unsigned int mask);
 		egl::Image *createDepthStencilSurface(unsigned int width, unsigned int height, sw::Format format, int multiSampleDepth, bool discard);
 		egl::Image *createRenderTarget(unsigned int width, unsigned int height, sw::Format format, int multiSampleDepth, bool lockable);
-		void drawIndexedPrimitive(sw::DrawType type, unsigned int indexOffset, unsigned int primitiveCount);
+		void drawIndexedPrimitive(sw::DrawType type, unsigned int indexOffset, unsigned int primitiveCount, bool primitiveRestart, unsigned int indexCount);
 		void drawPrimitive(sw::DrawType type, unsigned int primiveCount);
 		void setPixelShader(sw::PixelShader *shader);
 		void setPixelShaderConstantF(unsigned int startRegister, const float *constantData, unsigned int count);

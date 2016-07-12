@@ -64,36 +64,40 @@ void copyIndices(GLenum type, const void *input, GLsizei count, void *output)
 }
 
 template<class IndexType>
-void computeRange(const IndexType *indices, GLsizei count, GLuint *minIndex, GLuint *maxIndex)
+void computeRange(const IndexType *indices, GLsizei count, GLuint *minIndex, GLuint *maxIndex, bool primitiveRestart)
 {
-	*minIndex = indices[0];
-	*maxIndex = indices[0];
+	*maxIndex = 0;
+	*minIndex = MAX_ELEMENTS_INDICES;
 
 	for(GLsizei i = 0; i < count; i++)
 	{
+		if(primitiveRestart && indices[i] == IndexType(-1))
+		{
+			continue;
+		}
 		if(*minIndex > indices[i]) *minIndex = indices[i];
 		if(*maxIndex < indices[i]) *maxIndex = indices[i];
 	}
 }
 
-void computeRange(GLenum type, const void *indices, GLsizei count, GLuint *minIndex, GLuint *maxIndex)
+void computeRange(GLenum type, const void *indices, GLsizei count, GLuint *minIndex, GLuint *maxIndex, bool primitiveRestart)
 {
 	if(type == GL_UNSIGNED_BYTE)
 	{
-		computeRange(static_cast<const GLubyte*>(indices), count, minIndex, maxIndex);
+		computeRange(static_cast<const GLubyte*>(indices), count, minIndex, maxIndex, primitiveRestart);
 	}
 	else if(type == GL_UNSIGNED_INT)
 	{
-		computeRange(static_cast<const GLuint*>(indices), count, minIndex, maxIndex);
+		computeRange(static_cast<const GLuint*>(indices), count, minIndex, maxIndex, primitiveRestart);
 	}
 	else if(type == GL_UNSIGNED_SHORT)
 	{
-		computeRange(static_cast<const GLushort*>(indices), count, minIndex, maxIndex);
+		computeRange(static_cast<const GLushort*>(indices), count, minIndex, maxIndex, primitiveRestart);
 	}
 	else UNREACHABLE(type);
 }
 
-GLenum IndexDataManager::prepareIndexData(GLenum type, GLuint start, GLuint end, GLsizei count, Buffer *buffer, const void *indices, TranslatedIndexData *translated)
+GLenum IndexDataManager::prepareIndexData(GLenum type, GLuint start, GLuint end, GLsizei count, Buffer *buffer, const void *indices, TranslatedIndexData *translated, bool primitiveRestart)
 {
 	if(!mStreamingBuffer)
 	{
@@ -118,7 +122,7 @@ GLenum IndexDataManager::prepareIndexData(GLenum type, GLuint start, GLuint end,
 
 	if(staticBuffer)
 	{
-		computeRange(type, indices, count, &translated->minIndex, &translated->maxIndex);
+		computeRange(type, indices, count, &translated->minIndex, &translated->maxIndex, primitiveRestart);
 
 		translated->indexBuffer = staticBuffer;
 		translated->indexOffset = offset;
@@ -140,7 +144,7 @@ GLenum IndexDataManager::prepareIndexData(GLenum type, GLuint start, GLuint end,
 		copyIndices(type, staticBuffer ? buffer->data() : indices, convertCount, output);
 		streamingBuffer->unmap();
 
-		computeRange(type, indices, count, &translated->minIndex, &translated->maxIndex);
+		computeRange(type, indices, count, &translated->minIndex, &translated->maxIndex, primitiveRestart);
 
 		translated->indexBuffer = streamingBuffer->getResource();
 		translated->indexOffset = static_cast<unsigned int>(streamOffset);
