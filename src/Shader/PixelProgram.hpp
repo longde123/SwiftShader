@@ -82,8 +82,8 @@ namespace sw
 		Int4 enableContinue;
 		Int4 enableLeave;
 
-		void sampleTexture(Vector4f &c, const Src &sampler, Vector4f &uvwq, Vector4f &dsx, Vector4f &dsy, Vector4f &offset, SamplerFunction function);
-		void sampleTexture(Vector4f &c, int samplerIndex, Vector4f &uvwq, Vector4f &dsx, Vector4f &dsy, Vector4f &offset, SamplerFunction function);
+		void sampleTexture(Vector4f &c, const Src &sampler, Vector4f &uvwq, Float4 &bias, Vector4f &dsx, Vector4f &dsy, Vector4f &offset, SamplerFunction function);
+		void sampleTexture(Vector4f &c, int samplerIndex, Vector4f &uvwq, Float4 &bias, Vector4f &dsx, Vector4f &dsy, Vector4f &offset, SamplerFunction function);
 
 		// Raster operations
 		void clampColor(Vector4f oC[RENDERTARGETS]);
@@ -109,6 +109,7 @@ namespace sw
 		void TEXLD(Vector4f &dst, Vector4f &src0, const Src &src1, bool project, bool bias);
 		void TEXLDD(Vector4f &dst, Vector4f &src0, const Src &src1, Vector4f &src2, Vector4f &src3);
 		void TEXLDL(Vector4f &dst, Vector4f &src0, const Src &src1);
+		void TEXBIAS(Vector4f &dst, Vector4f &src0, const Src &src1, Vector4f &src2);
 		void TEXSIZE(Vector4f &dst, Float4 &lod, const Src &src1);
 		void TEXKILL(Int cMask[4], Vector4f &src, unsigned char mask);
 		void TEXOFFSET(Vector4f &dst, Vector4f &src0, const Src &src1, Vector4f &src2, bool bias);

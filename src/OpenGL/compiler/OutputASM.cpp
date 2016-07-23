@@ -1254,7 +1254,11 @@ namespace glsl
 						{
 							TIntermNode* offset = textureFunction.offset ? arg[2] : 0;
 
-							if(argumentCount == 2 || (textureFunction.offset && argumentCount == 3))
+							if(argumentCount == 3 && !textureFunction.proj && t->getNominalSize() == 4)
+							{
+								emit(sw::Shader::OPCODE_TEXBIAS, result, &coord, arg[0], arg[2]);
+							}
+							else if(argumentCount == 2 || (textureFunction.offset && argumentCount == 3))
 							{
 								emit(textureFunction.offset ? sw::Shader::OPCODE_TEXOFFSET : sw::Shader::OPCODE_TEX,
 								     result, &coord, arg[0], offset);
