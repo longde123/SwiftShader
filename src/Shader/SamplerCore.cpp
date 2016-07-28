@@ -1591,7 +1591,9 @@ namespace sw
 				Float4 duvdxy = Float4(dudxy.xz, dvdxy.xz);
 
 				// Scale by texture dimensions and LOD
-				Float4 dUVdxy = duvdxy * *Pointer<Float4>(texture + OFFSET(Texture,widthLOD));
+				// Scale by half because x and y go from -1 to 1 for inputs dsx and dsy,
+				// whereas sampling coord u and v go from 0 to 1.
+				Float4 dUVdxy = duvdxy * *Pointer<Float4>(texture + OFFSET(Texture,widthLOD)) * Float4(0.5f);
 
 				Float4 dUV2dxy = dUVdxy * dUVdxy;
 				Float4 dUV2 = dUV2dxy.xy + dUV2dxy.zw;
