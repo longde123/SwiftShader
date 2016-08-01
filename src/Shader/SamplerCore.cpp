@@ -615,10 +615,12 @@ namespace sw
 
 	void SamplerCore::textureSize(Pointer<Byte> &texture, Vector4f &size, Float4 &lod)
 	{
+		Int baseLevel = *Pointer<Int>(texture + OFFSET(Texture, baseLevel));
+		Int maxLevel = Int(MIPMAP_LEVELS - 1);
 		for(int i = 0; i < 4; ++i)
 		{
-			Int baseLevel = *Pointer<Int>(texture + OFFSET(Texture, baseLevel));
-			Pointer<Byte> mipmap = texture + OFFSET(Texture, mipmap) + (As<Int>(Extract(lod, i)) + baseLevel) * sizeof(Mipmap);
+			Int queryLevel = Min(Max(As<Int>(Extract(lod, i)) + baseLevel, baseLevel), maxLevel);
+			Pointer<Byte> mipmap = texture + OFFSET(Texture, mipmap) + queryLevel * sizeof(Mipmap);
 			size.x = Insert(size.x, As<Float>(Int(*Pointer<Short>(mipmap + OFFSET(Mipmap, width)))), i);
 			size.y = Insert(size.y, As<Float>(Int(*Pointer<Short>(mipmap + OFFSET(Mipmap, height)))), i);
 			size.z = Insert(size.z, As<Float>(Int(*Pointer<Short>(mipmap + OFFSET(Mipmap, depth)))), i);
@@ -1552,7 +1554,7 @@ namespace sw
 		}
 		else
 		{
-			lod = lodBias + Float(*Pointer<Int>(texture + OFFSET(Texture,baseLevel)));
+			lod = lodBias;
 		}
 
 		lod = Max(lod, *Pointer<Float>(texture + OFFSET(Texture, minLod)));
@@ -1613,7 +1615,7 @@ namespace sw
 		}
 		else
 		{
-			lod = lodBias + Float(*Pointer<Int>(texture + OFFSET(Texture,baseLevel)));
+			lod = lodBias;
 		}
 
 		lod = Max(lod, *Pointer<Float>(texture + OFFSET(Texture, minLod)));
@@ -1680,7 +1682,7 @@ namespace sw
 			}
 			else
 			{
-				lod = lodBias + Float(*Pointer<Int>(texture + OFFSET(Texture,baseLevel)));
+				lod = lodBias;
 			}
 
 			lod = Max(lod, *Pointer<Float>(texture + OFFSET(Texture, minLod)));
@@ -2230,9 +2232,11 @@ namespace sw
 
 	void SamplerCore::selectMipmap(Pointer<Byte> &texture, Pointer<Byte> buffer[4], Pointer<Byte> &mipmap, Float &lod, Int face[4], bool secondLOD)
 	{
+		Int base = *Pointer<Int>(texture + OFFSET(Texture, baseLevel));
+
 		if(state.mipmapFilter < MIPMAP_POINT)
 		{
-			mipmap = texture + OFFSET(Texture,mipmap[0]);
+			mipmap = texture + OFFSET(Texture, mipmap) + base * sizeof(Mipmap);
 		}
 		else
 		{
@@ -2246,6 +2250,8 @@ namespace sw
 			{
 				ilod = Int(lod);
 			}
+
+			ilod = Min(Max(ilod + base, base), MIPMAP_LEVELS - 1);
 
 			mipmap = texture + OFFSET(Texture,mipmap) + ilod * sizeof(Mipmap) + secondLOD * sizeof(Mipmap);
 		}

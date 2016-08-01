@@ -356,7 +356,7 @@ namespace sw
 
 	void Sampler::setBaseLevel(int baseLevel)
 	{
-		texture.baseLevel = baseLevel;
+		texture.baseLevel = clamp(baseLevel, 0, MIPMAP_LEVELS - 1);
 	}
 
 	void Sampler::setMaxLevel(int maxLevel)
