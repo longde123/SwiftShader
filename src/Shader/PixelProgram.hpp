@@ -106,7 +106,7 @@ namespace sw
 		void M3X4(Vector4f &dst, Vector4f &src0, const Src &src1);
 		void M4X3(Vector4f &dst, Vector4f &src0, const Src &src1);
 		void M4X4(Vector4f &dst, Vector4f &src0, const Src &src1);
-		void TEXLD(Vector4f &dst, Vector4f &src0, const Src &src1, bool project, bool bias);
+		void TEXLD(Vector4f &dst, Vector4f &src0, const Src &src1, bool bias);
 		void TEXLDD(Vector4f &dst, Vector4f &src0, const Src &src1, Vector4f &src2, Vector4f &src3);
 		void TEXLDL(Vector4f &dst, Vector4f &src0, const Src &src1);
 		void TEXBIAS(Vector4f &dst, Vector4f &src0, const Src &src1, Vector4f &src2);

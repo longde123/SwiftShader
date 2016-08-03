@@ -506,12 +506,7 @@ namespace sw
 			union
 			{
 				Control control;
-
-				struct
-				{
-					unsigned char project : 1;
-					unsigned char bias : 1;
-				};
+				bool bias;
 			};
 
 			bool predicate;

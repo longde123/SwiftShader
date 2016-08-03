@@ -984,8 +984,6 @@ namespace sw
 	{
 		if(opcode != OPCODE_LOOP && opcode != OPCODE_BREAKC && opcode != OPCODE_IFC && opcode != OPCODE_CMP)
 		{
-			if(project) return "p";
-
 			if(bias) return "b";
 
 			// FIXME: LOD

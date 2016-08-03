@@ -359,11 +359,6 @@ namespace sw
 									interpolant[index][3] = true;
 								}
 
-								if(instruction[i]->project)
-								{
-									interpolant[index][3] = true;
-								}
-
 								if(version == 0x0104 && instruction[i]->opcode == Shader::OPCODE_TEX)
 								{
 									if(instruction[i]->src[0].modifier == Shader::MODIFIER_DZ)

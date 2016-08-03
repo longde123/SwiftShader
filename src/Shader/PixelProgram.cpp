@@ -116,7 +116,6 @@ namespace sw
 			bool predicate = instruction->predicate;
 			Control control = instruction->control;
 			bool pp = dst.partialPrecision;
-			bool project = instruction->project;
 			bool bias = instruction->bias;
 
 			Vector4f d;
@@ -280,7 +279,7 @@ namespace sw
 			case Shader::OPCODE_M3X4:       M3X4(d, s0, src1);                             break;
 			case Shader::OPCODE_M3X3:       M3X3(d, s0, src1);                             break;
 			case Shader::OPCODE_M3X2:       M3X2(d, s0, src1);                             break;
-			case Shader::OPCODE_TEX:        TEXLD(d, s0, src1, project, bias);             break;
+			case Shader::OPCODE_TEX:        TEXLD(d, s0, src1, bias);                      break;
 			case Shader::OPCODE_TEXLDD:     TEXLDD(d, s0, src1, s2, s3);                   break;
 			case Shader::OPCODE_TEXLDL:     TEXLDL(d, s0, src1);                           break;
 			case Shader::OPCODE_TEXSIZE:    TEXSIZE(d, s0.x, src1);                        break;
@@ -1094,23 +1093,9 @@ namespace sw
 		dst.w = dot4(src0, row3);
 	}
 
-	void PixelProgram::TEXLD(Vector4f &dst, Vector4f &src0, const Src &src1, bool project, bool bias)
+	void PixelProgram::TEXLD(Vector4f &dst, Vector4f &src0, const Src &src1, bool bias)
 	{
-		// FIXME: project is never set to true. The division had been done in OutputASM.
-		if(project)
-		{
-			Vector4f proj;
-			Float4 rw = reciprocal(src0.w);
-			proj.x = src0.x * rw;
-			proj.y = src0.y * rw;
-			proj.z = src0.z * rw;
-
-			sampleTexture(dst, src1, proj, src0.x, src0, src0, src0, Implicit);
-		}
-		else
-		{
-			sampleTexture(dst, src1, src0, src0.x, src0, src0, src0, bias ? Bias : Implicit);
-		}
+		sampleTexture(dst, src1, src0, src0.x, src0, src0, src0, bias ? Bias : Implicit);
 	}
 
 	void PixelProgram::TEXOFFSET(Vector4f &dst, Vector4f &src0, const Src &src1, Vector4f &src2, bool bias)
